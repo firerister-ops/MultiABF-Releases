@@ -1,0 +1,23 @@
+MultiABF third-party distribution notice
+
+This application includes the original, unmodified Sandboxie-Plus x64 1.18.4
+installer as an independent third-party distribution. Its signatures, names,
+copyright notices and licenses are retained. MultiABF does not obfuscate or
+relicense Sandboxie. The installer deploys the Sandboxie service and driver
+with Windows administrator permission.
+
+Original binary:
+https://github.com/sandboxie-plus/Sandboxie/releases/tag/v1.18.4
+SHA256 cfceda1b1a63abcd2b3e5fbfdc4895f15db56316f5a9f2f06aea230e209b120e
+Corresponding upstream source and build instructions:
+https://github.com/sandboxie-plus/Sandboxie/tree/v1.18.4
+Sandboxie core: GNU GPL version 3 or later.
+https://github.com/sandboxie-plus/Sandboxie/blob/v1.18.4/Sandboxie/COPYING
+Other Sandboxie-Plus components have their own licenses:
+https://github.com/sandboxie-plus/Sandboxie/blob/v1.18.4/LICENSE.Plus
+Original binary redistribution is permitted free of charge under LICENSE.Plus.
+Commercial use and certificate-gated features remain subject to upstream terms.
+
+.NET runtime and other NuGet components retain their upstream license and
+THIRD-PARTY-NOTICES files in the self-contained distribution. MultiABF's own
+license does not restrict the rights granted by third-party licenses.
