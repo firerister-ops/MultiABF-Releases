@@ -1,0 +1,7 @@
+Copyright (c) 2026 firerister-ops. All rights reserved.
+
+MultiABF's original proprietary binaries may be used, copied and redistributed unmodified free of charge for personal or commercial purposes. This permission does not grant access to or a license to MultiABF's proprietary source code. Modification of our components is not licensed. Reverse engineering restrictions apply only to the extent permitted by applicable law.
+
+Third-party software is excluded from these restrictions and remains governed exclusively by its own licenses. In particular, this license does not restrict rights granted by GPL/LGPL or override Sandboxie-Plus certificate/use terms.
+
+The software is provided as is, without warranty, to the extent permitted by applicable law.
