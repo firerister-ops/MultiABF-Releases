@@ -6,12 +6,12 @@ This repository contains documentation and binary releases only. MultiABF source
 
 ## Download status
 
-No public build has been published yet. The first release is being packaged and checked, including third-party licensing and first-run setup. Do not download builds from unofficial mirrors.
+No public build has been published yet. The first release is being packaged and checked, including third-party licensing and clean-machine first-run setup. Do not download builds from unofficial mirrors.
 
 ## Getting started
 
 1. Download the release EXE and place it in a permanent directory.
-2. Start MultiABF. The distribution contains .NET, MultiABF components and the original pinned Sandboxie installer. First-time driver/service installation requires the Windows UAC prompt.
+2. Start MultiABF. The distribution contains .NET, MultiABF components and the original pinned Sandboxie installer. If Microsoft Visual C++ x64 Runtime is missing or too old, MultiABF downloads the pinned original package directly from Microsoft and verifies its SHA256 before installation. Internet is required for that prerequisite only. First-time dependency/driver/service installation requires the Windows UAC prompt.
 3. Select the PoE1 executable in Settings.
 4. Create a profile, adjust its game settings if needed, and select Start.
 5. Open a tile to control the game. Back to wall restores the main window. Stop closes the managed instance.
