@@ -6,7 +6,7 @@ This repository contains documentation and binary releases only. MultiABF source
 
 ## Download status
 
-No public build has been published yet. The first release is being packaged and checked, including third-party licensing and clean-machine first-run setup. Do not download builds from unofficial mirrors.
+Download the Windows x64 preview EXE from [Releases](https://github.com/firerister-ops/MultiABF-Releases/releases). Place it in a permanent directory and compare its SHA256 with the published SHA256SUMS file. Preview builds are intended for evaluation.
 
 ## Getting started
 
@@ -31,7 +31,7 @@ Creating and starting are separate actions. Generated identifiers are saved once
 
 Windows x64 with Windows Graphics Capture support; the current build targets Windows 10 build 19041 or later. Sandboxie core 5.73.4 (Plus 1.18.4) is the pinned backend. Other existing Sandboxie versions are not automatically replaced. Administrator permission is needed for driver/service installation and managed account setup.
 
-Clean-machine and different-hardware acceptance will be listed per release. Do not infer complete hardware-identity coverage from a profile status indicator. The current implementation still has drive-layout portability constraints requiring acceptance before a general public release.
+Acceptance covers a Windows 10 laptop with one NVMe volume and hybrid NVIDIA/Intel graphics, plus native controls on a desktop with three fixed volumes. The laptop ran three clients to an empty login screen, including one separate standard Windows user. Different hardware and actual gameplay capacity may differ. Do not infer complete hardware-identity coverage from a profile status indicator; unsupported surfaces remain explicit.
 
 ## Data and removal
 
