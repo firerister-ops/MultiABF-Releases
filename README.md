@@ -1,18 +1,18 @@
 # MultiABF
 
-A Windows desktop manager for persistent Path of Exile 1 profiles and a live wall of game windows.
+A Windows desktop manager for persistent Path of Exile 1 and Path of Exile 2 profiles and a live wall of game windows.
 
 This repository contains documentation and binary releases only. MultiABF source code and development history are kept separately and are not public. Third-party components retain their own licenses.
 
 ## Download status
 
-Download the Windows x64 preview EXE from [Releases](https://github.com/firerister-ops/MultiABF-Releases/releases). Place it in a permanent directory and compare its SHA256 with the published SHA256SUMS file. Preview builds are intended for evaluation.
+Download the Windows x64 preview EXE from [release 1.0.0-preview.164](https://github.com/firerister-ops/MultiABF-Releases/releases/tag/v1.0.0-preview.164). Place it in a permanent directory and compare its SHA256 with the published SHA256SUMS file. Preview builds are intended for evaluation.
 
 ## Getting started
 
 1. Download the release EXE and place it in a permanent directory.
 2. Start MultiABF. The distribution contains .NET, MultiABF components and the original pinned Sandboxie installer. If Microsoft Visual C++ x64 Runtime is missing or too old, MultiABF downloads the pinned original package directly from Microsoft and verifies its SHA256 before installation. Internet is required for that prerequisite only. First-time dependency/driver/service installation requires the Windows UAC prompt.
-3. Select the PoE1 executable in Settings.
+3. Select your PoE1 or PoE2 executable in Settings.
 4. Create a profile, adjust its game settings if needed, and select Start.
 5. Open a tile to control the game. Back to wall restores the main window. Stop closes the managed instance.
 
@@ -31,7 +31,7 @@ Creating and starting are separate actions. Generated identifiers are saved once
 
 Windows x64 with Windows Graphics Capture support; the current build targets Windows 10 build 19041 or later. Sandboxie core 5.73.4 (Plus 1.18.4) is the pinned backend. Other existing Sandboxie versions are not automatically replaced. Administrator permission is needed for driver/service installation and managed account setup.
 
-Acceptance covers a Windows 10 laptop with one NVMe volume and hybrid NVIDIA/Intel graphics, plus native controls on a desktop with three fixed volumes. The laptop ran three clients to an empty login screen, including one separate standard Windows user. Different hardware and actual gameplay capacity may differ. Do not infer complete hardware-identity coverage from a profile status indicator; unsupported surfaces remain explicit.
+Acceptance covers a Windows 10 laptop with one NVMe volume and hybrid NVIDIA/Intel graphics, and a desktop with three fixed volumes. The accepted R164 laptop runs use one test client at a time, with both ordinary and separate standard Windows-user profiles. The same executable passed sequential blank-login, navigation, exact Stop and restart-persistence checks with PoE1 and PoE2 on the desktop, in both user modes. Different hardware and actual gameplay capacity may differ. Do not infer complete hardware-identity coverage from a profile status indicator; unsupported surfaces remain explicit.
 
 ## Data and removal
 
