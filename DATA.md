@@ -1,5 +1,7 @@
 # Data storage
 
+- Managed DPB1: profiles/<profile-id>/dpb in the active data root contains the verified private application copy, private settings/logs and exact managed-run records. Original selected DPB installation is not modified. The subtree is removed with normal stopped-profile deletion. See [DPB guide](DPB.md).
+
 - New installations: %LOCALAPPDATA%/MultiABF/data — database, profile settings and identifiers, UI/operator settings, logs, local diagnostic archives and cleanup records.
 - An existing default %LOCALAPPDATA%/MultiClient database is reused in place so its saved paths and account bindings remain valid. An explicitly configured data directory is preserved. Settings → Open data folder always opens the active root.
 - %LOCALAPPDATA%/MultiABF/runtime — shared native resources extracted from the EXE, grouped by content hash. These are application components, not per-profile identities.
