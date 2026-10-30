@@ -8,7 +8,7 @@ This repository contains documentation and binary releases only. MultiABF source
 
 [Download preview174](https://github.com/firerister-ops/MultiABF-Releases/releases/tag/v1.0.0-preview.174). This preview adds independent PoE1/DPB1 and PoE2/DPB2 paths, compact cards with per-game GPU/DPB state, readable diagnostics, manual bug reports, official game updates and owned close. Prepared profiles reuse verified identity state; game EXE hashes are not compatibility allowlists.
 
-Actual laptop acceptance: ordinary and separate-user PoE1 with two distinct DPB instances, selective Stop, app restart, saved IDs/settings and no new Sandboxie errors. PoE1/PoE2 desktop lifecycle acceptance was established in preview164; post-authentication getters and DPB2 are not claimed.
+Preview174 desktop acceptance: PoE2 reaches blank login and DPB2 completes SDK initialization without bot Start. A prepared profile reaches ready in 44.4 seconds after app restart and a Runtime build change. Fresh managed Windows-account deletion and normal app close pass. Earlier laptop acceptance covers ordinary and separate-user PoE1 with two distinct DPB instances, selective Stop, app restart and saved IDs/settings. Post-authentication getters and third-party plugin/gameplay health are not claimed.
 
 ## Download status
 
@@ -26,7 +26,7 @@ Creating and starting are separate actions. Generated identifiers are saved once
 
 ## Launch DPB
 
-Set your installed DPB executable in **Settings → General**, start a **PoE1** profile, then use its **⋯ → Launch DPB** action and approve UAC if shown. The game PID and configuration are supplied automatically. DPB is not bundled and the bot is not started automatically. [Step-by-step guide in English and Russian](DPB.md).
+Set independent DPB1/DPB2 executables in **Settings → General**, start the matching game profile, then use the **DPB** action at the upper right of its card and approve UAC if shown. The game PID and configuration are supplied automatically. DPB is not bundled and the bot is not started automatically. [Step-by-step guide in English and Russian](DPB.md).
 
 ## Settings
 
@@ -36,6 +36,7 @@ Set your installed DPB executable in **Settings → General**, start a **PoE1** 
 - SOCKS5, CPU/RAM limits and an experimental separate standard Windows user are optional profile settings. Initial preparation in separate-user mode takes longer.
 - Previous/next window and return-to-wall shortcuts can be recorded or disabled in Settings.
 - Diagnostic archives remain local; no automatic upload is enabled.
+- The report form supports manual submission and retains the archive on a delivery error. Deployment of the new MultiABF server route is still pending separate approval; successful production delivery is not claimed by this preview's acceptance.
 
 ## System requirements and limits
 
