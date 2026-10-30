@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.0-preview.175
+
+- Park owned launchers and repair observed source-window position/style resets without waiting for wall refresh.
+- Keep interactive windows and unrelated processes excluded; verify full process creation time.
+- Common PoE1/PoE2 window path, 22 focused checks, owned WPF integration fixture and protected PoE2 API lifecycle acceptance.
+
 ## 1.0.0-preview.174
 
 - Compact profile actions at upper right, status at lower right and one-line PID/CPU/RAM/GPU/DPB telemetry.
