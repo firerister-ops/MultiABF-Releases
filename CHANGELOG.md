@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.0-preview.176
+
+- Register startup observation before CurrentUser Resume or at the earliest verified SeparateUser point; handle owned launchers/renderers before ordinary instance registration.
+- Keep interactive windows and unrelated processes excluded; verify full process creation time.
+- Common PoE1/PoE2 window path, 27 focused checks, owned WPF integration fixture and protected PoE2 API lifecycle acceptance.
+
 ## 1.0.0-preview.175
 
 - Park owned launchers and repair observed source-window position/style resets without waiting for wall refresh.
