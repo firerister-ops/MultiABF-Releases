@@ -4,9 +4,9 @@ A Windows desktop manager for persistent Path of Exile 1 and Path of Exile 2 pro
 
 This repository contains documentation and binary releases only. MultiABF source code and development history are kept separately and are not public. Third-party components retain their own licenses.
 
-## Current release: preview169
+## Current release: preview174
 
-[Download preview169](https://github.com/firerister-ops/MultiABF-Releases/releases/tag/v1.0.0-preview.169). This preview adds managed DPB1 launch from a running PoE1 profile menu, private per-profile DPB settings and normal close with profile Stop. Owned Sandboxie components can operate in the background without their own tray; existing independent installations are preserved. Preparation reuses verified state and removes a duplicate config read.
+[Download preview174](https://github.com/firerister-ops/MultiABF-Releases/releases/tag/v1.0.0-preview.174). This preview adds independent PoE1/DPB1 and PoE2/DPB2 paths, compact cards with per-game GPU/DPB state, readable diagnostics, manual bug reports, official game updates and owned close. Prepared profiles reuse verified identity state; game EXE hashes are not compatibility allowlists.
 
 Actual laptop acceptance: ordinary and separate-user PoE1 with two distinct DPB instances, selective Stop, app restart, saved IDs/settings and no new Sandboxie errors. PoE1/PoE2 desktop lifecycle acceptance was established in preview164; post-authentication getters and DPB2 are not claimed.
 
