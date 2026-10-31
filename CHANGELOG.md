@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-10-31 — Report backend activated
+
+- Standalone MultiABF manual reports now reach the production receiver/private storage and existing notification channel with an explicit MultiABF product field.
+- Protected preview176 sender, matching downloaded attachment and idempotent replay verified. No client binary change is required.
+
 ## 1.0.0-preview.176
 
 - Register startup observation before CurrentUser Resume or at the earliest verified SeparateUser point; handle owned launchers/renderers before ordinary instance registration.

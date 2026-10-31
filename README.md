@@ -36,7 +36,7 @@ Set independent DPB1/DPB2 executables in **Settings → General**, start the mat
 - SOCKS5, CPU/RAM limits and an experimental separate standard Windows user are optional profile settings. Initial preparation in separate-user mode takes longer.
 - Previous/next window and return-to-wall shortcuts can be recorded or disabled in Settings.
 - Diagnostic archives remain local; no automatic upload is enabled.
-- The report form supports manual submission and retains the archive on a delivery error. Deployment of the new MultiABF server route is still pending separate approval; successful production delivery is not claimed by this preview's acceptance.
+- The report form supports manual submission and retains the archive on a delivery error. The standalone server route is deployed. Protected preview176 sender delivery, idempotent retry, archive integrity and the existing report notification channel were verified on2026-10-31.
 
 ## System requirements and limits
 
