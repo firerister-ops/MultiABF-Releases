@@ -2,6 +2,8 @@
 
 ## 1.0.0 — stable, 2026-10-31
 
+- Expanded feature overview, English interface screenshots, complete settings/workflow guide and explicit risks/privacy/deletion warnings. Documentation update only; release binary and tag are unchanged.
+
 - Promote verified preview176 functionality to the stable main lane with a freshly compiled, jointly protected Windows x64 artifact.
 - Active standalone MultiABF report channel, shared PoE1/PoE2 lifecycle, official updates, prepared-profile reuse and owned-account cleanup.
 - Fresh package/API/version checks; unchanged functional source retains existing runtime acceptance limits.

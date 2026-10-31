@@ -2,7 +2,7 @@
 
 ## English
 
-Preview174 supports managed PoE1/DPB1 and PoE2/DPB2 launch. Install DPB separately with its supporting files and normal licensing. MultiABF supplies the owned game's PID and private game settings; launching DPB never starts a bot.
+MultiABF 1.0.0 supports managed PoE1/DPB1 and PoE2/DPB2 launch. Install DPB separately with its supporting files and normal licensing. MultiABF supplies the owned game's PID and private game settings; launching DPB never starts a bot.
 
 1. In Settings → General select four independent paths: PoE1, DPB1, PoE2, DPB2. Saved paths are absolute. Select the matching game when creating a profile.
 2. Start the profile and wait for its game window. Use the DPB button at the upper right of its card. Accept Windows elevation if requested.
@@ -16,7 +16,7 @@ On another computer choose that computer's game/DPB paths and create its own pro
 
 ## Русский
 
-Preview174 поддерживает запуск PoE1/DPB1 и PoE2/DPB2. DPB устанавливается отдельно вместе со своими компонентами и использует собственную лицензию. MultiABF передаёт PID управляемой игры и её приватные настройки. Автоматического Start бота нет.
+MultiABF 1.0.0 поддерживает запуск PoE1/DPB1 и PoE2/DPB2. DPB устанавливается отдельно вместе со своими компонентами и использует собственную лицензию. MultiABF передаёт PID управляемой игры и её приватные настройки. Автоматического Start бота нет.
 
 1. В «Настройки → Общие» отдельно выберите PoE1, DPB1, PoE2 и DPB2. Пути сохраняются абсолютными. При создании профиля выберите нужную игру.
 2. Запустите профиль и дождитесь окна игры. Нажмите DPB справа сверху на его карточке. При необходимости подтвердите повышение прав Windows.

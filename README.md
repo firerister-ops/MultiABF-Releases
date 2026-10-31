@@ -1,53 +1,69 @@
 # MultiABF
 
-A Windows desktop manager for persistent Path of Exile 1 and Path of Exile 2 profiles and a live wall of game windows.
+**One workspace for independent Path of Exile 1 and Path of Exile 2 windows.**
 
-This repository contains documentation and binary releases only. MultiABF source code and development history are kept separately and are not public. Third-party components retain their own licenses.
+MultiABF is a Windows desktop application for creating persistent game profiles, launching them in Sandboxie containers and switching between their windows from a single overview. Each profile keeps its own settings and generated identity. Optional DPB integration starts the matching DPB installation for that profile.
 
-## Current release: 1.0.0 stable
+**[Download MultiABF 1.0.0](https://github.com/firerister-ops/MultiABF-Releases/releases/tag/v1.0.0)** · [User guide](GUIDE.md) · [Risks and limitations](RISKS.md) · [DPB setup](DPB.md) · [Data storage](DATA.md) · [Troubleshooting](TROUBLESHOOTING.md)
 
-[Download 1.0.0](https://github.com/firerister-ops/MultiABF-Releases/releases/tag/v1.0.0). This stable release includes the verified preview176 functionality and connects startup observation before ordinary instance registration, and before CurrentUser Resume. Common PoE1/PoE2 containment also handles launcher visibility and renderer position/style resets. Previous improvements include independent PoE1/DPB1 and PoE2/DPB2 paths, compact cards with per-game GPU/DPB state, readable diagnostics, manual bug reports, official game updates and owned close. Prepared profiles reuse verified identity state; game EXE hashes are not compatibility allowlists.
+> Read the [risks](RISKS.md) before using game accounts. MultiABF does not guarantee protection from account sanctions, anonymity or compatibility with every game/DPB/plugin update. DPB is installed separately; MultiABF does not automatically press Start in a bot.
 
-Preview174 desktop acceptance: PoE2 reaches blank login and DPB2 completes SDK initialization without bot Start. A prepared profile reaches ready in 44.4 seconds after app restart and a Runtime build change. Fresh managed Windows-account deletion and normal app close pass. Earlier laptop acceptance covers ordinary and separate-user PoE1 with two distinct DPB instances, selective Stop, app restart and saved IDs/settings. Post-authentication getters and third-party plugin/gameplay health are not claimed.
+![MultiABF window wall with two stopped demonstration profiles](images/wall.png)
 
-## Download status
+## Features
 
-Download the Windows x64 release EXE from [Releases](https://github.com/firerister-ops/MultiABF-Releases/releases). Place it in a permanent directory and compare its SHA256 with the published SHA256SUMS file. Earlier preview builds remain available for evaluation.
+| Feature | What you can do |
+| --- | --- |
+| PoE1 and PoE2 | Keep separate PoE1/DPB1 and PoE2/DPB2 executable paths and choose a game for each new profile. |
+| Persistent profiles | Create, rename, copy and delete profiles. Saved profile identifiers survive restarts; a copy receives its own identifiers. |
+| Profile isolation | Use Sandboxie containers with profile-specific game configuration and generated hardware/Windows identity values. Optional separate standard Windows users provide an additional account boundary. |
+| Window wall | Select a grid, see window previews and open a running game for direct interaction. Actions stay at the top right of each card. |
+| Live status | See the game PID, CPU, RAM, per-game GPU usage when available and DPB state in one line. The header shows overall machine load. |
+| Window switching | Return to the wall, move to the previous/next running window, change hotkeys and set the active-window size. The active game view participates in Alt+Tab. |
+| Per-profile display | Set resolution and separate foreground/background FPS limits. |
+| Optional SOCKS5 | Configure a separate connection for a profile, including authentication. Connection checks and the actual game-route check are distinct. |
+| Resource limits | Optionally cap CPU and memory use for a profile. Limits do not reserve resources or guarantee a particular FPS. |
+| DPB integration | Launch the appropriate DPB against the managed game PID with private per-profile components/settings. ControlPanel is not required. |
+| Game updates | Use the official standalone launcher to check/update the shared game installation before startup. Running clients block updates rather than being closed. |
+| Diagnostics | Browse operations, filter by profile/result, search, expand stages and technical details, and save an archive. |
+| Manual bug reports | Describe a problem and send a small diagnostic attachment to the ABF server. No automatic report upload; a failed delivery leaves the archive locally. |
+| Managed cleanup | Stop a profile with its DPB. Normal application exit stops managed profiles. Delete a stopped profile together with its owned data and application-created Windows account. |
 
-## Getting started
+## Start in five steps
 
-1. Download the release EXE and place it in a permanent directory.
-2. Start MultiABF. The distribution contains .NET, MultiABF components and the original pinned Sandboxie installer. If Microsoft Visual C++ x64 Runtime is missing or too old, MultiABF downloads the pinned original package directly from Microsoft and verifies its SHA256 before installation. Internet is required for that prerequisite only. First-time dependency/driver/service installation requires the Windows UAC prompt.
-3. Select the PoE1 or PoE2 executable in Settings.
-4. Create a profile, adjust its game settings if needed, and select Start.
-5. Open a tile to control the game. Back to wall restores the main window. Stop closes the managed instance.
+1. Download **MultiABF.exe** and **SHA256SUMS.txt** from the release. Compare the checksum and put the EXE in a permanent folder.
+2. Run MultiABF. Allow required prerequisite/driver setup. The EXE includes .NET and the pinned Sandboxie installer; a missing supported Visual C++ runtime is downloaded from Microsoft and verified before installation.
+3. Open **Settings → General**. Select your game executable and, if used, its matching DPB executable. These must be paths on this computer.
+4. Select **Create profile**, choose the game and display settings, then **Create**. Creation saves the profile; it does not start the game.
+5. Press the profile's **Start** button. Wait for startup to finish, open its window, then sign in directly in the game. Use **DPB** only if you want to launch DPB. Bot Start remains a separate action.
 
-Creating and starting are separate actions. Generated identifiers are saved once and reused; restarting or changing display settings does not generate a new identity. Copy creates a separate profile with new identifiers.
+Read the [full user guide](GUIDE.md) for every setting, hotkey, shutdown/deletion behavior and troubleshooting steps.
 
-## Launch DPB
+## Interface
 
-Set independent DPB1/DPB2 executables in **Settings → General**, start the matching game profile, then use the **DPB** action at the upper right of its card and approve UAC if shown. The game PID and configuration are supplied automatically. DPB is not bundled and the bot is not started automatically. [Step-by-step guide in English and Russian](DPB.md).
+Screenshots show the actual **1.0.0** release in **English**, captured through its UI snapshot API using an isolated demonstration data directory. Profiles are stopped; these are interface examples, not gameplay or performance evidence. No account credentials or live player windows are shown.
 
-## Settings
+| Profile setup | General settings |
+| --- | --- |
+| ![Profile settings: game, resolution and FPS](images/create-profile.png) | ![Independent PoE and DPB paths](images/settings-general.png) |
 
-- English is the default for a new installation. Russian is available under Settings → General → Language / Язык. An existing selection is preserved.
-- Tray minimization is optional and disabled by default.
-- Active window size is global; game resolution and FPS limits belong to each profile.
-- SOCKS5, CPU/RAM limits and an experimental separate standard Windows user are optional profile settings. Initial preparation in separate-user mode takes longer.
-- Previous/next window and return-to-wall shortcuts can be recorded or disabled in Settings.
-- Diagnostic archives remain local; no automatic upload is enabled.
-- The report form supports manual submission and retains the archive on a delivery error. The standalone server route is deployed. Protected preview176 sender delivery, idempotent retry, archive integrity and the existing report notification channel were verified on2026-10-31.
+| Diagnostics | Report a problem |
+| --- | --- |
+| ![Operations and expandable diagnostic details](images/diagnostics.png) | ![Manual report description, scope and attachment explanation](images/bug-report.png) |
 
-## System requirements and limits
+## Requirements and compatibility
 
-Windows x64 with Windows Graphics Capture support; the current build targets Windows 10 build 19041 or later. Sandboxie core 5.73.4 (Plus 1.18.4) is the pinned backend. Other existing Sandboxie versions are not automatically replaced. Administrator permission is needed for driver/service installation and managed account setup.
+- Windows x64, Windows 10 build 19041 or later, with Windows Graphics Capture support. Actual capacity depends on RAM, GPU, CPU and game settings.
+- Separately installed PoE1 and/or PoE2. DPB and its plugins/license are optional and supplied separately.
+- The pinned backend is Sandboxie core **5.73.4 / Plus 1.18.4**. An existing different Sandboxie version is not automatically replaced. Installation of drivers/services or managed Windows accounts can require administrator permission.
+- First preparation is slower than reuse of a prepared profile; experimental separate-user mode can add substantial preparation time. No fixed launch time or client count is promised.
 
-Acceptance covers a Windows 10 laptop with one NVMe volume and hybrid NVIDIA/Intel graphics, plus native controls on a desktop with three fixed volumes. The laptop ran three clients to an empty login screen, including one separate standard Windows user. Different hardware and actual gameplay capacity may differ. Do not infer complete hardware-identity coverage from a profile status indicator; unsupported surfaces remain explicit.
+Verification includes PoE1 managed runs and PoE2/DPB2 SDK attachment on owned test machines. It does not prove all gameplay paths, every hardware identity surface or third-party plugin stability. See [known limits and warnings](RISKS.md).
 
-## Data and removal
+## Reports, data and license
 
-See [Data storage](DATA.md) and [Troubleshooting](TROUBLESHOOTING.md). Deleting a stopped managed profile also removes its owned data and any Windows account created for it. Shared dependencies and other profiles are retained.
+Use **Report a problem** in the main toolbar or Diagnostics. Include the expected result, what happened and reproduction steps. Save the returned report number. Read [what is attached](GUIDE.md#diagnostics-and-bug-reports) before submitting.
 
-## License
+Profiles, settings and diagnostics live in the active data directory; **Settings → General → Open data folder** opens it. [Storage, backup and deletion details](DATA.md).
 
-MultiABF is proprietary freeware. See [LICENSE.txt](LICENSE.txt) for our components and [THIRD_PARTY_NOTICES.txt](THIRD_PARTY_NOTICES.txt) for dependencies. Free use does not remove Sandboxie's own commercial-use conditions.
+MultiABF is proprietary freeware. This public repository contains documentation and binary releases, not application source. See [LICENSE.txt](LICENSE.txt) and [THIRD_PARTY_NOTICES.txt](THIRD_PARTY_NOTICES.txt). Sandboxie's own license/certificate requirements still apply; see the [official certificate information](https://sandboxie-plus.com/contribute/).
