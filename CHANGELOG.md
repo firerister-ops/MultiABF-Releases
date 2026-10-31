@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.0 — stable, 2026-10-31
+
+- Promote verified preview176 functionality to the stable main lane with a freshly compiled, jointly protected Windows x64 artifact.
+- Active standalone MultiABF report channel, shared PoE1/PoE2 lifecycle, official updates, prepared-profile reuse and owned-account cleanup.
+- Fresh package/API/version checks; unchanged functional source retains existing runtime acceptance limits.
+
 ## 2026-10-31 — Report backend activated
 
 - Standalone MultiABF manual reports now reach the production receiver/private storage and existing notification channel with an explicit MultiABF product field.
