@@ -1,6 +1,10 @@
-# MultiABF
+<p align="center">
+  <img src="images/multiabf-icon.png" alt="MultiABF icon" width="128" height="128">
+</p>
 
-**One workspace for independent Path of Exile 1 and Path of Exile 2 windows.**
+<h1 align="center">MultiABF</h1>
+
+<p align="center"><strong>One workspace for independent Path of Exile 1 and Path of Exile 2 windows.</strong></p>
 
 MultiABF is a Windows desktop application for creating persistent game profiles, launching them in Sandboxie containers and switching between their windows from a single overview. Each profile keeps its own settings and generated identity. Optional DPB integration starts the matching DPB installation for that profile.
 
