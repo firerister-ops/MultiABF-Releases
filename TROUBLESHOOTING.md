@@ -23,3 +23,7 @@ Use **Report a problem** for the whole application after the failure, since the 
 For `identity_storage_device_readback_invalid`, update to 1.0.2 or later, repeat the failing profile preparation and use **Report a problem**. Select the whole application if profile creation was rolled back. Do not manually bypass the helper check.
 
 The archive now contains the entire retained chronology, operation/stage durations and helper outcomes. Storage failure details show parent/child availability, individual checks, activation and phase counters, root-boundary evidence and failed bindings. The coverage section identifies the exported range; prior deleted events cannot be reconstructed. Raw identity values, argv and credentials are excluded, but your report description is included as written. No report is uploaded automatically.
+
+## The selected executable was not recognized as PoE
+
+Update to 1.0.3 or later. Choose PoE1 or PoE2 and the intended installed executable in Settings, then create the profile. Your explicit game selection is authoritative; a renamed or updated executable does not need to match embedded recognition markers. Saved profiles keep their game selection at launch. An older API integration that omits the game selection still uses automatic recognition.

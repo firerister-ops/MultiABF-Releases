@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.0.3 - stable, 2026-11-02
+
+- Respect your selected PoE1/PoE2 game instead of rejecting an executable because its embedded metadata is missing, changed or identifies another generation.
+- Remove repeated game recognition from saved-profile launch and CPU/WMI-account preflight so the same rejection does not return later.
+- Preserve the selected game and its configuration layout. Legacy API requests without a selected game retain automatic recognition.
+- Existing file, helper ownership, architecture and identity readback requirements remain in place.
+
+
 ## 1.0.2 - stable, 2026-11-01
 
 - Preserve the full available diagnostic history instead of only the last 250 events, including early failures for a selected profile.
