@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.1 - stable, 2026-11-01
+
+- Explain profile-creation failures with the failing step, file/component path and Windows code for both games.
+- Keep bounded creation-failure metadata in diagnostic reports after rollback without including command arguments, credentials or full host paths.
+- Verified protected EXE error responses, report archives and normal shutdown without launching games or bots.
+
 ## 1.0.0 — stable, 2026-10-31
 
 - Expanded feature overview, English interface screenshots, complete settings/workflow guide and explicit risks/privacy/deletion warnings. Documentation update only; release binary and tag are unchanged.
