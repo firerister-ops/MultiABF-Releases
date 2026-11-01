@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.0.2 - stable, 2026-11-01
+
+- Preserve the full available diagnostic history instead of only the last 250 events, including early failures for a selected profile.
+- Trace operations, preparation stages, helper commands and rollback with timing, results, cancellation and error codes. Repeated frames and normal background polls are excluded.
+- Include detailed storage-readback checks, parent/child verification and native counters for `identity_storage_device_readback_invalid`, plus structured privacy/readiness failures.
+- Exclude raw identifiers, credentials, command arguments and host paths from diagnostic evidence. Existing journal retention still applies.
+- Storage verification is unchanged. This update improves evidence; it does not claim to fix the customer's underlying disk compatibility failure.
+
+
 ## 1.0.1 - stable, 2026-11-01
 
 - Explain profile-creation failures with the failing step, file/component path and Windows code for both games.

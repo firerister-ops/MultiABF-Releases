@@ -17,3 +17,9 @@ See [Launch DPB](DPB.md). Save the path to the complete installed DPB EXE, wait 
 In version 1.0.1 or later, read the creation step, File/component path and Windows number shown in the status bar. Hover over the status to read the complete message. If Windows did not report a path, the message states this explicitly.
 
 Use **Report a problem** for the whole application after the failure, since the incomplete profile may have been rolled back. Include the full error shown on screen and the application version in your description. The diagnostic attachment retains the step and component basename, but deliberately omits full computer paths, command arguments and credentials. The update reports the cause; it does not automatically reinstall missing components.
+
+## Storage identity readback rejected
+
+For `identity_storage_device_readback_invalid`, update to 1.0.2 or later, repeat the failing profile preparation and use **Report a problem**. Select the whole application if profile creation was rolled back. Do not manually bypass the helper check.
+
+The archive now contains the entire retained chronology, operation/stage durations and helper outcomes. Storage failure details show parent/child availability, individual checks, activation and phase counters, root-boundary evidence and failed bindings. The coverage section identifies the exported range; prior deleted events cannot be reconstructed. Raw identity values, argv and credentials are excluded, but your report description is included as written. No report is uploaded automatically.
