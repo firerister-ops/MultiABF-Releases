@@ -35,3 +35,11 @@ Version 1.0.4 reads disk capabilities before applying MultiABF storage modules. 
 Access denial, provider/read/clone failures, incorrect projected values and failed restoration remain blocking errors. Do not disable these checks to force a profile through. Send a new bug report from the failing preparation: its archive now includes each field's route, capability reason, HRESULT/type/status, active and restored checks, and nested WMI failures. Raw hardware identifiers and seed fingerprints are excluded from these diagnostic details.
 
 The current release was checked with native helpers, controlled fixtures and the protected application without starting games or bots. The reporting device still needs to confirm its own result after updating.
+
+## Profile creation: Generate identity / Windows error 2
+
+The Windows message "The system cannot find the file specified" can refer to a volume lookup, not a missing game or helper executable. Version 1.0.5 handles a non-system volume disappearing or becoming not ready during enumeration, keeps healthy volumes, and records the skip. A failure involving the system volume, access denial or incomplete enumeration still blocks creation.
+
+For volume-read failures, the error and diagnostic archive now identify the exact native API (for example QueryDosDeviceW or GetVolumePathNamesForVolumeNameW), the Windows error and the affected volume. The volume reference is its canonical Windows volume GUID, or the system drive root if its GUID could not be resolved. These details intentionally identify the problem volume; arbitrary folder paths, command arguments, disk serials and credentials are not included in this structured evidence.
+
+Update and retry profile creation. A read-only retry with game launch disabled is enough to check the creation stage. If it still fails, send a fresh report containing the native-call and volume details. Reinstalling PoE or disabling identity checks is not a general solution to this error.

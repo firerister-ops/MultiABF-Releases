@@ -1,5 +1,17 @@
 # Changelog
 
+## 1.0.5 - stable, 2026-11-02
+
+Volume enumeration and profile-creation fix.
+
+- Continue enumerating healthy local volumes when a non-system volume disappears or becomes not ready during a per-volume read; record the skipped volume and exact Windows call/error.
+- Keep system-volume failures, access denial, unsupported operations and incomplete enumeration blocking. No empty-volume fallback or guessed identity.
+- Show the exact native API and volume reference in profile-creation errors, the journal and diagnostic archives. Include skipped-volume observations in operation tracing.
+- Apply the shared fix to PoE1/PoE2 runtime paths and both x64/x86 hardware diagnostic helpers. Preserve exact helper trust pins.
+
+Checked without starting games or bots. The reporting user must retry profile creation to confirm their device-specific result.
+
+
 ## 1.0.4 - stable, 2026-11-02
 
 Disk compatibility and diagnostic update.
