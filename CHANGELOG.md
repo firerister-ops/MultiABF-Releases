@@ -1,5 +1,17 @@
 # Changelog
 
+## 1.0.4 - stable, 2026-11-02
+
+Disk compatibility and diagnostic update.
+
+- Read disk capabilities in a separate unboxed helper before enabling MultiABF storage modules.
+- Verify supported fields individually; preserve unsupported native fields and report partial coverage explicitly.
+- Keep access errors, corrupted data, projection mismatches and restoration failures blocking.
+- Include per-field capability state, reason, route, HRESULT, CIM/VARIANT type, native status and returned lengths in diagnostic archives; retain nested WMI failure details without raw hardware identifiers.
+
+Validated without starting games, DPB or bots. Partial hardware acceptance on the reporting machine remains to be confirmed.
+
+
 ## 1.0.3 - stable, 2026-11-02
 
 - Respect your selected PoE1/PoE2 game instead of rejecting an executable because its embedded metadata is missing, changed or identifies another generation.

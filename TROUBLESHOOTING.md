@@ -27,3 +27,11 @@ The archive now contains the entire retained chronology, operation/stage duratio
 ## The selected executable was not recognized as PoE
 
 Update to 1.0.3 or later. Choose PoE1 or PoE2 and the intended installed executable in Settings, then create the profile. Your explicit game selection is authoritative; a renamed or updated executable does not need to match embedded recognition markers. Saved profiles keep their game selection at launch. An older API integration that omits the game selection still uses automatic recognition.
+
+## Disk capability and storage identity errors
+
+Version 1.0.4 reads disk capabilities before applying MultiABF storage modules. A known unavailable property or unsupported identifier format can produce **partial** coverage: supported fields are verified and unavailable values remain native. Partial does not mean every hardware identity field is isolated.
+
+Access denial, provider/read/clone failures, incorrect projected values and failed restoration remain blocking errors. Do not disable these checks to force a profile through. Send a new bug report from the failing preparation: its archive now includes each field's route, capability reason, HRESULT/type/status, active and restored checks, and nested WMI failures. Raw hardware identifiers and seed fingerprints are excluded from these diagnostic details.
+
+The current release was checked with native helpers, controlled fixtures and the protected application without starting games or bots. The reporting device still needs to confirm its own result after updating.
