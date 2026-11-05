@@ -1,5 +1,20 @@
 # Changelog
 
+## 1.0.6-beta.1 — beta, 2026-11-05
+
+- Direct mode: launch multiple clients with independent configs and optional
+  separate standard Windows users, without installing Sandboxie.
+- Retain the wall, interactive control, preparation, DPB attachment and exact Stop
+  pipeline. Sandboxie installation is now an explicit Settings action.
+- Include the complete Direct runtime in the standalone EXE; use portable absolute
+  runtime paths and retain profile data when updating.
+- Improve disk capability checks, real-volume verification and missing-board
+  handling. Unsupported channels remain visible; genuine identity mismatches,
+  access errors and restoration failures remain blocking.
+
+Direct is not equivalent to Sandboxie isolation. Capacity at the login screen
+does not establish capacity during gameplay or with bots. See [risks](RISKS.md).
+
 ## 1.0.5 - stable, 2026-11-02
 
 Volume enumeration and profile-creation fix.

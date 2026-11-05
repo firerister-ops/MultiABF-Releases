@@ -10,6 +10,11 @@ The [official Grinding Gear Games terms](https://www.pathofexile.com/legal/terms
 
 ## Isolation and privacy limits
 
+- Beta Direct mode is not a Sandboxie security boundary. It uses real Windows
+  accounts and implemented process-local projections; it does not provide a VM
+  or promise every Sandboxie restriction. Unsupported optional channels remain
+  visible as unavailable, and are not proof of identity separation.
+
 - A Sandboxie container and an optional standard Windows account are not a virtual machine or a separate physical computer. The host OS, drivers, installed game and hardware resources remain shared.
 - Generated identifiers apply to implemented/verified surfaces. Some surfaces are unsupported, blocked or unmeasured. Complete hardware identity separation, anonymity and isolation from every game getter are not promised.
 - Without an explicitly configured and verified route, profiles may share the host's public IP. A successful SOCKS5 connection test alone does not prove that all game traffic uses that route. MultiABF is not a system-wide VPN.

@@ -1,4 +1,4 @@
-# MultiABF 1.0.0 — user guide
+# MultiABF — user guide
 
 [Overview and download](README.md) · [Risks and warnings](RISKS.md) · [DPB details](DPB.md) · [Data and backup](DATA.md)
 
@@ -6,9 +6,17 @@ Button names below follow the English interface. Change the language under **Set
 
 ## Install and update MultiABF
 
-Download the EXE and checksum file from the [official release](https://github.com/firerister-ops/MultiABF-Releases/releases/tag/v1.0.0). Keep the EXE in a permanent local folder. To check the downloaded file in PowerShell, run `Get-FileHash -Algorithm SHA256 'C:\Tools\MultiABF\MultiABF.exe'` using your actual path, then compare the result with SHA256SUMS.txt.
+Download the EXE and checksum file from [official releases](https://github.com/firerister-ops/MultiABF-Releases/releases). Beta builds are marked pre-release. Keep the EXE in a permanent local folder. To check the downloaded file in PowerShell, run `Get-FileHash -Algorithm SHA256 'C:\Tools\MultiABF\MultiABF.exe'` using your actual path, then compare the result with SHA256SUMS.txt.
 
 On first run, complete prerequisite setup. MultiABF bundles its .NET runtime and the pinned Sandboxie installer. If Visual C++ x64 Runtime is missing or too old, its pinned Microsoft installer is downloaded and checked. Windows may request elevation for installation. Do not disable system protection to dismiss a warning; verify the download source and read the [risk notes](RISKS.md).
+
+In **1.0.6 beta**, Sandboxie is optional and is not installed at startup. Enable
+the mode in General settings and press **Install components** to install it.
+Direct profiles work without it; saved Sandboxie profiles keep their backend.
+In a stopped profile's settings, the Sandboxie selection chooses that backend;
+turn it off for Direct. Separate Windows users remain a separate profile choice.
+Unavailable optional Direct channels appear as warnings; they are not certified
+as active. Required launch/privacy/proxy failures still block startup.
 
 To replace MultiABF with a newer release, stop its managed profiles and close the application first. Back up the active data folder, replace the EXE, then reopen it. Game and DPB paths are specific to this PC. Copying an EXE to another computer does not migrate protected credentials or Windows accounts.
 
@@ -107,6 +115,13 @@ Each profile receives private DPB components/settings; the selected source insta
 ![Diagnostics](images/diagnostics.png)
 
 Under **Settings → Diagnostics**, select ordinary-log retention: **7** days by default, or **14 / 30 / 90**. **Prepare diagnostic archive on error** is on by default. These archives stay on this computer; automatic preparation is not automatic upload. Unresolved recovery evidence is retained separately.
+
+In **1.0.6 beta**, **Automatically send blocking-error reports** is enabled by
+default and can be disabled in Settings. Failed create/prepare/start/stop
+operations, unexpected managed-process exits and unhandled application errors
+send the existing filtered diagnostic package in the background. Automatic
+reports contain no screenshots. A failed upload keeps its package for retry;
+the diagnostics view shows delivery status and the report number.
 
 ![Diagnostic retention settings](images/settings-diagnostics.png)
 

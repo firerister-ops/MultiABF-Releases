@@ -6,9 +6,11 @@
 
 <p align="center"><strong>One workspace for independent Path of Exile 1 and Path of Exile 2 windows.</strong></p>
 
-MultiABF is a Windows desktop application for creating persistent game profiles, launching them in Sandboxie containers and switching between their windows from a single overview. Each profile keeps its own settings and generated identity. Optional DPB integration starts the matching DPB installation for that profile.
+MultiABF is a Windows desktop application for creating persistent game profiles and switching between their windows from a single overview. Each profile keeps its own settings and generated identity. The beta adds Direct launches without Sandboxie, including separate standard Windows users. Optional DPB integration starts the matching DPB installation for that profile.
 
 **[Download MultiABF 1.0.5](https://github.com/firerister-ops/MultiABF-Releases/releases/tag/v1.0.5)** · [User guide](GUIDE.md) · [Risks and limitations](RISKS.md) · [DPB setup](DPB.md) · [Data storage](DATA.md) · [Troubleshooting](TROUBLESHOOTING.md)
+
+**[Try 1.0.6-beta.1](https://github.com/firerister-ops/MultiABF-Releases/releases/tag/v1.0.6-beta.1)** for Direct mode and optional Sandboxie component installation. Direct provides the implemented per-process policies; it is not an equivalent security boundary to Sandboxie. Keep a backup of profile data before trying a beta.
 
 > Read the [risks](RISKS.md) before using game accounts. MultiABF does not guarantee protection from account sanctions, anonymity or compatibility with every game/DPB/plugin update. DPB is installed separately; MultiABF does not automatically press Start in a bot.
 
@@ -20,7 +22,7 @@ MultiABF is a Windows desktop application for creating persistent game profiles,
 | --- | --- |
 | PoE1 and PoE2 | Keep separate PoE1/DPB1 and PoE2/DPB2 executable paths and choose a game for each new profile. |
 | Persistent profiles | Create, rename, copy and delete profiles. Saved profile identifiers survive restarts; a copy receives its own identifiers. |
-| Profile isolation | Use Sandboxie containers with profile-specific game configuration and generated hardware/Windows identity values. Optional separate standard Windows users provide an additional account boundary. |
+| Profile isolation | Choose Sandboxie containers or beta Direct mode with profile-specific game configuration and generated hardware/Windows identity values. Optional separate standard Windows users provide an additional account boundary. |
 | Window wall | Select a grid, see window previews and open a running game for direct interaction. Actions stay at the top right of each card. |
 | Live status | See the game PID, CPU, RAM, per-game GPU usage when available and DPB state in one line. The header shows overall machine load. |
 | Window switching | Return to the wall, move to the previous/next running window, change hotkeys and set the active-window size. The active game view participates in Alt+Tab. |
@@ -30,7 +32,7 @@ MultiABF is a Windows desktop application for creating persistent game profiles,
 | DPB integration | Launch the appropriate DPB against the managed game PID with private per-profile components/settings. ControlPanel is not required. |
 | Game updates | Use the official standalone launcher to check/update the shared game installation before startup. Running clients block updates rather than being closed. |
 | Diagnostics | Browse operations, filter by profile/result, search, expand stages and technical details, and save an archive. |
-| Manual bug reports | Describe a problem and send a small diagnostic attachment to the ABF server. No automatic report upload; a failed delivery leaves the archive locally. |
+| Bug reports | Describe a problem and send a diagnostic attachment to the ABF server. The beta also sends blocking-error reports automatically by default; this can be disabled in Settings. Failed deliveries retain a local package. |
 | Managed cleanup | Stop a profile with its DPB. Normal application exit stops managed profiles. Delete a stopped profile together with its owned data and application-created Windows account. |
 
 ## Start in five steps
