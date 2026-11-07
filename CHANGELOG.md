@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.7 — stable diagnostics, 2026-11-07
+
+- Automatic reports now retain the owned game's exit code and time, last window action, background-render/cache state and observed managed Stop requests. Unavailable data stays explicit; an exit code alone does not identify who closed a client.
+- Official game-update failures include bounded error-dialog text with paths and private values redacted. Canceled launches retain the actual Stop result or exception category.
+- Existing report opt-out and failed-delivery retry remain available. No screenshots, complete game logs or memory dumps are added. These diagnostics help investigate future failures; this update does not claim to fix the past reported crashes.
+
 ## 1.0.6 — stable, 2026-11-07
 
 - Direct launches with independent persistent profiles and optional separate

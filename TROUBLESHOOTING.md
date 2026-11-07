@@ -1,6 +1,6 @@
 # Troubleshooting
 
-Open Settings → Diagnostics or the profile's Diagnostics action. Events identify creation, preparation, launch, running, cancellation and errors. A local diagnostic archive excludes free-form messages and configuration secrets; no archive is sent automatically. Review any attachment before publishing it in an issue.
+Open Settings → Diagnostics or the profile's Diagnostics action. Events identify creation, preparation, launch, running, cancellation and errors. Diagnostic archives exclude configuration secrets. Automatic blocking-error reports are enabled by default and can be disabled in Settings → Diagnostics. Review any attachment before publishing it in an issue.
 
 If first-run installation is canceled, no game profile is launched. Start MultiABF again to retry. An incompatible or partial Sandboxie installation is left unchanged and reported explicitly. UAC may also be required when enabling an optional separate Windows user.
 
@@ -22,7 +22,7 @@ Use **Report a problem** for the whole application after the failure, since the 
 
 For `identity_storage_device_readback_invalid`, update to 1.0.2 or later, repeat the failing profile preparation and use **Report a problem**. Select the whole application if profile creation was rolled back. Do not manually bypass the helper check.
 
-The archive now contains the entire retained chronology, operation/stage durations and helper outcomes. Storage failure details show parent/child availability, individual checks, activation and phase counters, root-boundary evidence and failed bindings. The coverage section identifies the exported range; prior deleted events cannot be reconstructed. Raw identity values, argv and credentials are excluded, but your report description is included as written. No report is uploaded automatically.
+The archive now contains the entire retained chronology, operation/stage durations and helper outcomes. Storage failure details show parent/child availability, individual checks, activation and phase counters, root-boundary evidence and failed bindings. The coverage section identifies the exported range; prior deleted events cannot be reconstructed. Raw identity values, argv and credentials are excluded, but your report description is included as written. Automatic blocking-error delivery follows Settings → Diagnostics.
 
 ## The selected executable was not recognized as PoE
 
@@ -43,3 +43,7 @@ The Windows message "The system cannot find the file specified" can refer to a v
 For volume-read failures, the error and diagnostic archive now identify the exact native API (for example QueryDosDeviceW or GetVolumePathNamesForVolumeNameW), the Windows error and the affected volume. The volume reference is its canonical Windows volume GUID, or the system drive root if its GUID could not be resolved. These details intentionally identify the problem volume; arbitrary folder paths, command arguments, disk serials and credentials are not included in this structured evidence.
 
 Update and retry profile creation. A read-only retry with game launch disabled is enough to check the creation stage. If it still fails, send a fresh report containing the native-call and volume details. Reinstalling PoE or disabling identity checks is not a general solution to this error.
+
+## Game exits, official update errors and canceled launches
+
+Update to **1.0.7** or later so new reports include owned process exit evidence, the last window action, render/cache state, bounded redacted updater errors and the actual cancellation Stop outcome. Missing historical exit codes or dialog bodies cannot be recovered from an older report. A zero exit code does not establish a manual close. Keep the report number if you contact support; do not publish credentials or complete game logs.

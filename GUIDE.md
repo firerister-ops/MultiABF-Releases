@@ -127,9 +127,11 @@ the diagnostics view shows delivery status and the report number.
 
 To contact the ABF service, select **Report a problem** (the toolbar button is labelled **Report bug**), describe the problem and select the entire application or one profile. Include steps, expected behavior, actual behavior and approximate time. Do not type passwords, tokens or account recovery information.
 
+Version **1.0.7** adds owned game exit codes/times, recent window and render/cache state, actual cancellation Stop outcomes and bounded redacted text from official-updater error dialogs. No memory dumps, game images or complete game logs are included. Missing data is marked unavailable.
+
 ![Manual bug report form](images/bug-report.png)
 
-Press **Send** to prepare and upload the report. The attachment includes MultiABF version, recent event times/types, operation/profile IDs, error codes and your description. Game logs, screenshots, passwords and settings are not collected by this form. The server returns a report number on success. If delivery fails, the archive stays locally and the form allows manual retry; **Open folder** lets you find it. The application does not upload reports in the background.
+Press **Send** to prepare and upload the report. The attachment includes MultiABF version, recent event times/types, operation/profile IDs, error codes and your description. Game logs, screenshots, passwords and settings are not collected by this form. The server returns a report number on success. If delivery fails, the archive stays locally and the form allows manual retry; **Open folder** lets you find it. Manual reports are sent after pressing Send; automatic blocking-error reports follow the separate setting described above.
 
 ## Exit, delete and move to another PC
 
