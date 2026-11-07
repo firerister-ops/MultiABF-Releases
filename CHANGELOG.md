@@ -1,5 +1,25 @@
 # Changelog
 
+## 1.0.6 — stable, 2026-11-07
+
+- Direct launches with independent persistent profiles and optional separate
+  standard Windows users. Sandboxie installation is an explicit optional action.
+- Improved window wall, taskbar-aware maximization, input defaults for both games,
+  configuration Save/copy behavior and managed DPB launch/Stop handling.
+- Optional **Disable rendering in the background** per profile, Off by default:
+  retain a static frame in memory, restore rendering before Open, and refresh
+  the frame on return. Initial support is verified PoE1 3.29.3c DX11 in Direct
+  mode. Active managed DPB and unsupported builds/renderers remain unsuppressed.
+- Normal official game updates, localized updater completion and correct cached
+  update invalidation when the real game executable changes behind its launcher.
+- Automatic blocking-error reports with opt-out, local delivery state and retry;
+  ordinary validation, readiness, warnings and cancellation are excluded. Automatic
+  reports do not include screenshots or complete game logs.
+
+Background rendering suppression does not establish RAM/VRAM savings or a fixed
+number of in-game clients. Autologin is not included. Back up profile data, stop
+profiles and close MultiABF before replacing the EXE.
+
 ## 1.0.6-beta.1 — beta, 2026-11-05
 
 - Direct mode: launch multiple clients with independent configs and optional

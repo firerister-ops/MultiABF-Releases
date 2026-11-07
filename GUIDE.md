@@ -10,7 +10,7 @@ Download the EXE and checksum file from [official releases](https://github.com/f
 
 On first run, complete prerequisite setup. MultiABF bundles its .NET runtime and the pinned Sandboxie installer. If Visual C++ x64 Runtime is missing or too old, its pinned Microsoft installer is downloaded and checked. Windows may request elevation for installation. Do not disable system protection to dismiss a warning; verify the download source and read the [risk notes](RISKS.md).
 
-In **1.0.6 beta**, Sandboxie is optional and is not installed at startup. Enable
+In **1.0.6**, Sandboxie is optional and is not installed at startup. Enable
 the mode in General settings and press **Install components** to install it.
 Direct profiles work without it; saved Sandboxie profiles keep their backend.
 In a stopped profile's settings, the Sandboxie selection chooses that backend;
@@ -116,7 +116,7 @@ Each profile receives private DPB components/settings; the selected source insta
 
 Under **Settings → Diagnostics**, select ordinary-log retention: **7** days by default, or **14 / 30 / 90**. **Prepare diagnostic archive on error** is on by default. These archives stay on this computer; automatic preparation is not automatic upload. Unresolved recovery evidence is retained separately.
 
-In **1.0.6 beta**, **Automatically send blocking-error reports** is enabled by
+In **1.0.6**, **Automatically send blocking-error reports** is enabled by
 default and can be disabled in Settings. Failed create/prepare/start/stop
 operations, unexpected managed-process exits and unhandled application errors
 send the existing filtered diagnostic package in the background. Automatic
@@ -138,3 +138,23 @@ Normal close cancels unfinished starts and stops the application's managed games
 Delete only after Stop completes. Read the confirmation: owned files/configuration and an application-created Windows user are removed. Shared dependencies and other profiles are retained. Locked files or incomplete ownership/cleanup cause an error; resolve the obstruction before retrying.
 
 Back up the active data directory while profiles are stopped and MultiABF is closed. Windows Credential Manager secrets and managed-account credentials are machine-bound; a folder backup is not a portable clone of those accounts. On another PC choose its own executable paths and create its own profiles. See [DATA.md](DATA.md) and [RISKS.md](RISKS.md).
+
+## Background rendering and cached frames
+
+Under the profile's **Settings → Game**, after the FPS controls, **Disable rendering
+in the background** is Off by default. Save enables it for that profile only;
+it can also be changed while that profile is running. Other running-profile
+settings remain read-only.
+
+For the verified PoE1 3.29.3c DX11 build in Direct mode, MultiABF obtains a real
+frame and then suppresses native rendering while the client is on the wall.
+The tile shows **Cache · time**. This is a static image. **Open** restores rendering;
+returning to the wall obtains a fresh frame. Stop/new launch invalidates the old
+cache. Cached pictures are held in memory rather than saved between launches.
+An explicit diagnostic snapshot request can still save its requested image.
+
+PoE2, unsupported images/renderers and active managed DPB retain ordinary
+rendering with a status explaining the limitation. A failed capture leaves
+rendering On; a failed restore is shown as an error. The mode does not change
+monitor configuration, log into the game or block official game updates.
+GPU savings do not establish RAM/VRAM savings or a fixed number of in-game clients.

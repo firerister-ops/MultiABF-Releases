@@ -47,3 +47,11 @@ MultiABF's freeware license does not replace the game, DPB or Sandboxie licenses
 The published 1.0.0 artifact passed protected packaging, version/serialization and isolated API startup/shutdown checks. Earlier unchanged-code acceptance includes owned PoE1 managed runs and PoE2/DPB2 SDK startup, capture, interaction/return and shutdown. The reporting channel was verified through creation, duplicate-safe retry, stored/downloaded archive integrity and support-channel delivery.
 
 This evidence does not establish universal hardware support, a fixed startup time, an unlimited client count, uninterrupted gameplay, complete identity coverage or immunity from game-account sanctions. If a problem occurs, stop the affected profile, record its operation/error and use **Report a problem**. Do not repeatedly restart a failing bot without understanding its requirements.
+
+## Background-render compatibility
+
+The optional cache/render mode currently supports only the verified PoE1 3.29.3c
+DX11 Direct image. It is Off by default and unavailable for active managed DPB.
+Its cache is static; it is not evidence that a bot, network or game simulation is
+progressing. Unsupported builds keep ordinary rendering. No fifteen/twenty
+in-game capacity or RAM/VRAM reduction is promised.
