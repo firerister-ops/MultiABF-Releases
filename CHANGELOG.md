@@ -1,5 +1,17 @@
 # Changelog
 
+## 1.0.8 — stable, 2026-11-08
+
+- Profile ID inspection: hover over **ID** for a compact group summary with checked/saved/attention indicators. Click or press Enter/Space for a persistent details window with collapsible groups, selectable values and wheel scrolling. Green checks require matching preparation evidence; this is not a live check inside a running game.
+- Preparation saves the full available assigned list locally, including storage-device IDs and network interface/association GUIDs. It is excluded from manual and automatic reports. Identical network association GUIDs are grouped; counts include virtual and system Windows interfaces, not just physical cards.
+- New automatic Direct profiles and copies receive independent persistent identities. Existing unassigned profiles remain unchanged, including on Start; copies retain their selected channels.
+- New Direct profiles select all supported identity channels, including CPU brand, GPU description, Vulkan UUID and Windows group/owner under the current user, including administrator. Existing explicit Off choices remain unchanged. CPU support validates exact game builds; unknown builds require a compatibility update. The compact ID summary includes CPU/GPU/RAM and original/Off states.
+- Optional distribution of Direct DX11/DX12 clients across dedicated GPUs, accounting for pending and cached clients and weighting assignment by VRAM capacity. Disabled by default; Vulkan requires it to be disabled. This does not promise adaptive GPU-utilization balancing.
+- Memory controls show Windows committed memory and manage bounded automatic pagefile growth. The growth limit is 32–128 GiB (128 GiB by default); launches wait when the required memory cannot be made available. Manual reduction saves the next-startup size and disables automatic growth. MultiABF never restarts Windows.
+- Includes the 1.0.7 failure diagnostics and the background-render lifecycle fixes from the integrated work.
+
+Stop managed profiles, close MultiABF and back up its active data folder before replacing the EXE. These checks do not establish a new in-game capacity or dual-GPU benchmark.
+
 ## 1.0.7 — stable diagnostics, 2026-11-07
 
 - Automatic reports now retain the owned game's exit code and time, last window action, background-render/cache state and observed managed Stop requests. Unavailable data stays explicit; an exit code alone does not identify who closed a client.

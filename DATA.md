@@ -3,6 +3,7 @@
 - Managed DPB1: profiles/<profile-id>/dpb in the active data root contains the verified private application copy, private settings/logs and exact managed-run records. Original selected DPB installation is not modified. The subtree is removed with normal stopped-profile deletion. See [DPB guide](DPB.md).
 
 - New installations: %LOCALAPPDATA%/MultiABF/data — database, profile settings and identifiers, UI/operator settings, logs, local diagnostic archives and cleanup records.
+- 1.0.8: `identity-catalogs/<profile-id>.json` inside the active data root holds readable assigned identifiers and their preparation time. It is local profile data, excluded from manual/automatic diagnostic archives and report uploads. A saved list is refreshed during preparation; changed assignments/settings make the old list unavailable in the tooltip.
 - An existing default %LOCALAPPDATA%/MultiClient database is reused in place so its saved paths and account bindings remain valid. An explicitly configured data directory is preserved. Settings → Open data folder always opens the active root.
 - %LOCALAPPDATA%/MultiABF/runtime — shared native resources extracted from the EXE, grouped by content hash. These are application components, not per-profile identities.
 - %PROGRAMDATA%/MultiClient — shared helpers and necessary account/recovery files, accessible to the configured Windows account.

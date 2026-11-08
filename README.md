@@ -8,9 +8,10 @@
 
 MultiABF is a Windows desktop application for creating persistent game profiles and switching between their windows from a single overview. Each profile keeps its own settings and generated identity. Direct mode supports launches without Sandboxie, including separate standard Windows users. Optional DPB integration starts the matching DPB installation for that profile.
 
-**[Download MultiABF 1.0.7](https://github.com/firerister-ops/MultiABF-Releases/releases/tag/v1.0.7)** · [User guide](GUIDE.md) · [Risks and limitations](RISKS.md) · [DPB setup](DPB.md) · [Data storage](DATA.md) · [Troubleshooting](TROUBLESHOOTING.md)
+**[Download MultiABF 1.0.8](https://github.com/firerister-ops/MultiABF-Releases/releases/tag/v1.0.8)** · [User guide](GUIDE.md) · [Risks and limitations](RISKS.md) · [DPB setup](DPB.md) · [Data storage](DATA.md) · [Troubleshooting](TROUBLESHOOTING.md)
 
-**Stable 1.0.7 includes Direct mode and optional Sandboxie component installation.** Direct provides the implemented per-process policies and separate-account launches; see the documented isolation limits. Back up profile data before updating.
+
+**Stable 1.0.8 combines profile ID inspection, pagefile controls and optional multi-GPU distribution.** Direct provides the implemented per-process policies and separate-account launches; see the documented isolation limits. Back up profile data before updating.
 
 > Read the [risks](RISKS.md) before using game accounts. MultiABF does not guarantee protection from account sanctions, anonymity or compatibility with every game/DPB/plugin update. DPB is installed separately; MultiABF does not automatically press Start in a bot.
 
@@ -22,6 +23,9 @@ MultiABF is a Windows desktop application for creating persistent game profiles 
 | --- | --- |
 | PoE1 and PoE2 | Keep separate PoE1/DPB1 and PoE2/DPB2 executable paths and choose a game for each new profile. |
 | Persistent profiles | Create, rename, copy and delete profiles. Saved profile identifiers survive restarts; a copy receives its own identifiers. |
+| Profile IDs | Hover over ID for compact CPU/GPU/RAM and preparation states; click for grouped, scrollable values. New Direct profiles select the complete supported bundle, including current-user/admin CPU, GPU description, Vulkan UUID and Windows group/owner. The full catalogue stays local and out of reports. |
+| Multiple GPUs | Optionally distribute Direct DX11/DX12 launches across dedicated GPUs, counting pending and cached clients. Off by default. |
+| Memory and pagefile | See Windows committed memory, configure bounded automatic pagefile growth and save a smaller size for the next Windows startup. |
 | Profile isolation | Choose Sandboxie containers or Direct mode with profile-specific game configuration and generated hardware/Windows identity values. Optional separate standard Windows users provide an additional account boundary. |
 | Window wall | Select a grid, see window previews and open a running game for direct interaction. Actions stay at the top right of each card. |
 | Live status | See the game PID, CPU, RAM, per-game GPU usage when available and DPB state in one line. The header shows overall machine load. |

@@ -20,6 +20,20 @@ as active. Required launch/privacy/proxy failures still block startup.
 
 To replace MultiABF with a newer release, stop its managed profiles and close the application first. Back up the active data folder, replace the EXE, then reopen it. Game and DPB paths are specific to this PC. Copying an EXE to another computer does not migrate protected credentials or Windows accounts.
 
+## Profile identifiers (1.0.8)
+
+Hover over **ID** before a profile name for a compact CPU/GPU/RAM and channel summary. **✓ Checked** means matching preparation evidence is saved; **• Saved** means assigned values are available without that check; **○ Native / Off** means that channel uses the original value; **! Check needed** means data is unavailable or a check needs attention. An amber badge identifies a missing ID assignment. This view does not re-check a running game or change its identity.
+
+Click **ID**, or focus it and press Enter/Space, to open the details window. Expand the group you need, scroll with the mouse wheel or scrollbar, and select values to copy them. Close or Escape dismisses the window without saving changes. Groups needing attention start expanded.
+
+The interface count comes from the Windows interface table and can include VPN, virtual, miniport, loopback and system entries. It is not a count of physical network cards created by MultiABF. Several interfaces can reference the same network association GUID; repeated values are displayed once with the complete interface list.
+
+Preparation saves the full available list locally. Older profiles may need a new preparation before their individual storage-device and network GUID values are available. Changed assignments/settings require a fresh preparation. The list is excluded from diagnostic reports. See [Data storage](DATA.md) for its location.
+
+New automatic Direct profiles select the complete supported identity bundle, including CPU brand, GPU description, Vulkan device UUID and Windows group/owner. Current Windows users, including administrators, are supported; a separate standard account remains an optional choice. Copies receive independent values and retain the source profile's explicit channel selections. Existing profiles are not silently migrated or switched on.
+
+CPU brand support is bound to verified game builds. A game update can require a new MultiABF compatibility update; unknown builds are rejected rather than using old instruction addresses. Changing the CPU brand does not change its capabilities, topology or physical speed. GPU description changes preserve physical adapter selection and capabilities. Preparation checks and actual game getter observations are separate evidence.
+
 ## General settings
 
 Open **Settings → General**, change values and press **Save**. **Cancel** leaves the saved settings unchanged. Scroll inside the General tab to reach controls below the executable paths.
@@ -39,6 +53,14 @@ Open **Settings → General**, change values and press **Save**. **Cancel** leav
 | Open data folder | Opens the active profile/settings/log/diagnostic storage location. |
 
 Paths are stored as absolute paths. Select the installation on the current computer rather than copying another machine's path. Existing profiles retain their game selection; changing global paths does not convert a PoE1 profile into PoE2.
+
+### GPU and memory controls
+
+**Distribute Direct clients across GPUs** is disabled by default. When enabled, DirectX 11/12 launches reserve a dedicated GPU before the game resumes. Pending launches and clients with cached rendering count toward distribution; different VRAM capacities are weighted. Disable this option for Vulkan. It assigns new clients; it does not move an already running client to another card or continuously balance measured GPU utilization.
+
+Open the **Memory** tab for the active Windows pagefile size, next-startup configuration and committed memory. **Grow pagefile when memory is insufficient** is enabled by default, with a **128 GiB** automatic growth limit; the accepted limit range is **32–128 GiB**. Growth requires the normal Windows administrative helper and available disk space. If memory remains insufficient or the limit is reached, queued launches wait.
+
+To reduce the file, stop profiles and the launch queue, select **32–128 GiB**, then choose **Save reduction for Windows restart**. This action saves separately from the normal settings Save, disables automatic growth and sets its limit to the chosen size. Windows applies a reduction at the next startup; the active file is not immediately shrunk and MultiABF does not reboot the PC.
 
 ### Game update behavior
 
