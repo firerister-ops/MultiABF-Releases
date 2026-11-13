@@ -1,3 +1,11 @@
+## 1.0.9 - 2026-11-13
+
+- Start ready profiles concurrently with Start all or Start selected. Compatible identity preparation is reused; changing related components, profile settings or hardware invalidates the corresponding proof.
+- New profiles receive persistent realistic CPU/GPU model names. Existing identifiers and channel selections remain unchanged. Compact ID details show the assigned models and readable status.
+- Separate GPU readings, RAM usage, commit and pagefile information make resource limits easier to see.
+- Improved launch failure reasons, owned-process cancellation/cleanup and diagnostic reports for both PoE1 and PoE2.
+- Protected package: 155 contract checks and 84 verified embedded resources. The beta acceptance checked ready-profile reuse and persistence on Home-PC for both games. Mass-start timing on this stable release is not yet measured. A rare reported WMI MAC failure remains under investigation; the new reports preserve its native error details.
+
 # Changelog
 
 ## 1.0.8 — stable, 2026-11-08

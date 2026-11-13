@@ -8,10 +8,10 @@
 
 MultiABF is a Windows desktop application for creating persistent game profiles and switching between their windows from a single overview. Each profile keeps its own settings and generated identity. Direct mode supports launches without Sandboxie, including separate standard Windows users. Optional DPB integration starts the matching DPB installation for that profile.
 
-**[Download MultiABF 1.0.8](https://github.com/firerister-ops/MultiABF-Releases/releases/tag/v1.0.8)** · [User guide](GUIDE.md) · [Risks and limitations](RISKS.md) · [DPB setup](DPB.md) · [Data storage](DATA.md) · [Troubleshooting](TROUBLESHOOTING.md)
+**[Download MultiABF 1.0.9](https://github.com/firerister-ops/MultiABF-Releases/releases/tag/v1.0.9)** · [User guide](GUIDE.md) · [Risks and limitations](RISKS.md) · [DPB setup](DPB.md) · [Data storage](DATA.md) · [Troubleshooting](TROUBLESHOOTING.md)
 
 
-**Stable 1.0.8 combines profile ID inspection, pagefile controls and optional multi-GPU distribution.** Direct provides the implemented per-process policies and separate-account launches; see the documented isolation limits. Back up profile data before updating.
+**Stable 1.0.9 adds parallel launch for prepared profiles, clearer hardware identities and separate GPU, RAM and pagefile indicators.** Direct provides the implemented per-process policies and separate-account launches; see the documented isolation limits. Back up profile data before updating.
 
 > Read the [risks](RISKS.md) before using game accounts. MultiABF does not guarantee protection from account sanctions, anonymity or compatibility with every game/DPB/plugin update. DPB is installed separately; MultiABF does not automatically press Start in a bot.
 

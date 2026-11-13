@@ -182,3 +182,8 @@ rendering with a status explaining the limitation. A failed capture leaves
 rendering On; a failed restore is shown as an error. The mode does not change
 monitor configuration, log into the game or block official game updates.
 GPU savings do not establish RAM/VRAM savings or a fixed number of in-game clients.
+
+
+## Starting multiple prepared profiles
+
+Use Start selected or Start all to launch ready profiles concurrently. Initial profile preparation may take longer. Ready profiles do not wait for a previous game window; memory and GPU admission still apply. Stop cancels the selected profile launch. Updating identity-related settings or components may require preparation again.
