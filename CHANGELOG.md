@@ -1,3 +1,9 @@
+## 1.0.21 - 2026-11-15
+
+- Keep game/frame input queues independent, preserve original ownership and maintain relative z-order without focus transfer.
+- Preserve pointer/keyboard focus, native modules and saved identities; verify opening, menu navigation, minimize/restore and return to the wall.
+- Home-PC three-profile PoE1 login-screen functional checks pass; no gameplay claim.
+
 ## 1.0.20 - 2026-11-14
 
 - Faster owned game-window activation and overlapping previous-window headless caching.
