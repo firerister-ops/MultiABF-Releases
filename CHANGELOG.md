@@ -1,3 +1,10 @@
+## 1.0.18 - 2026-11-14
+
+- Support the verified PoE1 3.30.0 client for Direct CPU identities and DX11 cached headless mode.
+- Official updates use the initiating profile proxy.
+- Reuse prepared IDs after game-written config changes and clear resolved memory-wait notices.
+- Repeated launch of 20 prepared PoE1 login-screen clients checked on Home-PC; no gameplay or universal timing claim.
+
 ## 1.0.9 - 2026-11-13
 
 - Start ready profiles concurrently with Start all or Start selected. Compatible identity preparation is reused; changing related components, profile settings or hardware invalidates the corresponding proof.
