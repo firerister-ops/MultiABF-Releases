@@ -1,3 +1,9 @@
+## 1.0.19 - 2026-11-14
+
+- Structural game-image recognition, validated local cache and independently updated compatibility data.
+- Preserve all selected Direct identities and leave optional rendering enabled if its layout is unresolved.
+- Latest unknown-hash PoE1 image accepted on Home-PC with three full-ID profiles, headless restore/recache and repeat launch.
+
 ## 1.0.18 - 2026-11-14
 
 - Support the verified PoE1 3.30.0 client for Direct CPU identities and DX11 cached headless mode.
