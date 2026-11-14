@@ -1,0 +1,662 @@
+{
+  "schema": 1,
+  "revision": "2026-11-14.1",
+  "builds": [
+    {
+      "schema": 1,
+      "sha256": "e5c238a2478dc5cfab8eeb4d3de3ddf9ef065645410cfdc744ae7779fcba42d7",
+      "imageSize": 81915904,
+      "game": "PathOfExile",
+      "cpuSites": [
+        14633380,
+        15306510,
+        15306548,
+        15306883,
+        15306932,
+        16518474,
+        19535569,
+        19535620,
+        19535781,
+        19535864,
+        19535917,
+        19535945,
+        47003681,
+        47003716,
+        47003869,
+        47003918,
+        47003947,
+        47039358,
+        47182653,
+        47182744,
+        47182996,
+        47631977
+      ],
+      "render": {
+        "recipe": "legacy-verified",
+        "appVtableRva": 52918928,
+        "contextGlobalRva": 73649560,
+        "appOffset": 168,
+        "flagOffset": 9,
+        "readerRva": 15447596,
+        "reader": "SIuDqAAAAIB4CQAPlMJIi8vozuv//w==",
+        "gateRva": 17217711,
+        "gate": "gL3oEgAAAA+E1wQAAA=="
+      }
+    },
+    {
+      "schema": 1,
+      "sha256": "e5c238a2478dc5cfab8eeb4d3de3ddf9ef065645410cfdc744ae7779fcba42d7",
+      "imageSize": 0,
+      "game": "PathOfExile2",
+      "cpuSites": [
+        14633380,
+        15306510,
+        15306548,
+        15306883,
+        15306932,
+        16518474,
+        19535569,
+        19535620,
+        19535781,
+        19535864,
+        19535917,
+        19535945,
+        47003681,
+        47003716,
+        47003869,
+        47003918,
+        47003947,
+        47039358,
+        47182653,
+        47182744,
+        47182996,
+        47631977
+      ]
+    },
+    {
+      "schema": 1,
+      "sha256": "48d190d558608e22de9ced9da0d3a8d829fd00569cf054df1115ec93bffe6601",
+      "imageSize": 81915904,
+      "game": "PathOfExile",
+      "cpuSites": [
+        14632644,
+        15305694,
+        15305732,
+        15306067,
+        15306116,
+        16517658,
+        19534753,
+        19534804,
+        19534965,
+        19535048,
+        19535101,
+        19535129,
+        47003009,
+        47003044,
+        47003197,
+        47003246,
+        47003275,
+        47038686,
+        47181981,
+        47182072,
+        47182324,
+        47631305
+      ],
+      "render": {
+        "recipe": "legacy-verified",
+        "appVtableRva": 52919048,
+        "contextGlobalRva": 73649560,
+        "appOffset": 168,
+        "flagOffset": 9,
+        "readerRva": 15446780,
+        "reader": "SIuDqAAAAIB4CQAPlMJIi8vozuv//w==",
+        "gateRva": 17216895,
+        "gate": "gL3oEgAAAA+E1wQAAA=="
+      }
+    },
+    {
+      "schema": 1,
+      "sha256": "48d190d558608e22de9ced9da0d3a8d829fd00569cf054df1115ec93bffe6601",
+      "imageSize": 0,
+      "game": "PathOfExile2",
+      "cpuSites": [
+        14632644,
+        15305694,
+        15305732,
+        15306067,
+        15306116,
+        16517658,
+        19534753,
+        19534804,
+        19534965,
+        19535048,
+        19535101,
+        19535129,
+        47003009,
+        47003044,
+        47003197,
+        47003246,
+        47003275,
+        47038686,
+        47181981,
+        47182072,
+        47182324,
+        47631305
+      ]
+    },
+    {
+      "schema": 1,
+      "sha256": "e9ba3d31c4d922e1826ef01d02fd22178a001b29e17264b68fc2446efd41f53d",
+      "imageSize": 81371136,
+      "game": "PathOfExile",
+      "cpuSites": [
+        14981006,
+        14981044,
+        14981379,
+        14981428,
+        16163098,
+        19114785,
+        19114836,
+        19114997,
+        19115080,
+        19115133,
+        19115161,
+        46708273,
+        46708308,
+        46708461,
+        46708510,
+        46708539,
+        46743950,
+        46887261,
+        46887352,
+        46887604,
+        47336585
+      ],
+      "render": {
+        "recipe": "legacy-verified",
+        "appVtableRva": 52483216,
+        "contextGlobalRva": 73238672,
+        "appOffset": 168,
+        "flagOffset": 10,
+        "readerRva": 15113756,
+        "reader": "SIuDqAAAAIB4CgAPlMJIi8vonuv//w==",
+        "gateRva": 16841200,
+        "gate": "gL1oEgAAAA+EKwQAAA=="
+      }
+    },
+    {
+      "schema": 1,
+      "sha256": "e9ba3d31c4d922e1826ef01d02fd22178a001b29e17264b68fc2446efd41f53d",
+      "imageSize": 0,
+      "game": "PathOfExile2",
+      "cpuSites": [
+        14981006,
+        14981044,
+        14981379,
+        14981428,
+        16163098,
+        19114785,
+        19114836,
+        19114997,
+        19115080,
+        19115133,
+        19115161,
+        46708273,
+        46708308,
+        46708461,
+        46708510,
+        46708539,
+        46743950,
+        46887261,
+        46887352,
+        46887604,
+        47336585
+      ]
+    },
+    {
+      "schema": 1,
+      "sha256": "2a410fbd8766c74ce6e29e4ae8251d9480a723a15f518b165dbc2cde218269f9",
+      "imageSize": 0,
+      "game": "PathOfExile",
+      "cpuSites": [
+        18065802,
+        42942094,
+        42942132,
+        42942467,
+        42942516,
+        45233825,
+        45233876,
+        45234037,
+        45234120,
+        45234173,
+        45234201,
+        45869509,
+        45869544,
+        45869697,
+        45869746,
+        45869775,
+        45957582,
+        46100893,
+        46100984,
+        46101236,
+        46540569
+      ]
+    },
+    {
+      "schema": 1,
+      "sha256": "2a410fbd8766c74ce6e29e4ae8251d9480a723a15f518b165dbc2cde218269f9",
+      "imageSize": 0,
+      "game": "PathOfExile2",
+      "cpuSites": [
+        18065802,
+        42942094,
+        42942132,
+        42942467,
+        42942516,
+        45233825,
+        45233876,
+        45234037,
+        45234120,
+        45234173,
+        45234201,
+        45869509,
+        45869544,
+        45869697,
+        45869746,
+        45869775,
+        45957582,
+        46100893,
+        46100984,
+        46101236,
+        46540569
+      ]
+    },
+    {
+      "schema": 1,
+      "sha256": "cc8aa38345be2a837575215d2ce142ebecf7b007345843265b335ebb8ac5964c",
+      "imageSize": 81371136,
+      "game": "PathOfExile",
+      "cpuSites": [
+        14981006,
+        14981044,
+        14981379,
+        14981428,
+        16163098,
+        19114785,
+        19114836,
+        19114997,
+        19115080,
+        19115133,
+        19115161,
+        46708273,
+        46708308,
+        46708461,
+        46708510,
+        46708539,
+        46743950,
+        46887261,
+        46887352,
+        46887604,
+        47336585
+      ],
+      "render": {
+        "recipe": "legacy-verified",
+        "appVtableRva": 52483344,
+        "contextGlobalRva": 73238672,
+        "appOffset": 168,
+        "flagOffset": 10,
+        "readerRva": 15113756,
+        "reader": "SIuDqAAAAIB4CgAPlMJIi8vonuv//w==",
+        "gateRva": 16841200,
+        "gate": "gL1oEgAAAA+EKwQAAA=="
+      }
+    },
+    {
+      "schema": 1,
+      "sha256": "cc8aa38345be2a837575215d2ce142ebecf7b007345843265b335ebb8ac5964c",
+      "imageSize": 0,
+      "game": "PathOfExile2",
+      "cpuSites": [
+        14981006,
+        14981044,
+        14981379,
+        14981428,
+        16163098,
+        19114785,
+        19114836,
+        19114997,
+        19115080,
+        19115133,
+        19115161,
+        46708273,
+        46708308,
+        46708461,
+        46708510,
+        46708539,
+        46743950,
+        46887261,
+        46887352,
+        46887604,
+        47336585
+      ]
+    },
+    {
+      "schema": 1,
+      "sha256": "d46f4c27576122afc41a428eef96b3b4c75592a16827ed8c2204508ab06a455d",
+      "imageSize": 0,
+      "game": "PathOfExile",
+      "cpuSites": [
+        18030202,
+        42866942,
+        42866980,
+        42867315,
+        42867364,
+        45158673,
+        45158724,
+        45158885,
+        45158968,
+        45159021,
+        45159049,
+        45794365,
+        45794400,
+        45794553,
+        45794602,
+        45794631,
+        45882430,
+        46025725,
+        46025816,
+        46026068,
+        46465401
+      ]
+    },
+    {
+      "schema": 1,
+      "sha256": "d46f4c27576122afc41a428eef96b3b4c75592a16827ed8c2204508ab06a455d",
+      "imageSize": 0,
+      "game": "PathOfExile2",
+      "cpuSites": [
+        18030202,
+        42866942,
+        42866980,
+        42867315,
+        42867364,
+        45158673,
+        45158724,
+        45158885,
+        45158968,
+        45159021,
+        45159049,
+        45794365,
+        45794400,
+        45794553,
+        45794602,
+        45794631,
+        45882430,
+        46025725,
+        46025816,
+        46026068,
+        46465401
+      ]
+    },
+    {
+      "schema": 1,
+      "sha256": "7e0d36655e6e788202d2d588429c45064bbf87caec95938ebb19a317947c834e",
+      "imageSize": 0,
+      "game": "PathOfExile",
+      "cpuSites": [
+        18065018,
+        42941310,
+        42941348,
+        42941683,
+        42941732,
+        45233041,
+        45233092,
+        45233253,
+        45233336,
+        45233389,
+        45233417,
+        45868725,
+        45868760,
+        45868913,
+        45868962,
+        45868991,
+        45956798,
+        46100093,
+        46100184,
+        46100436,
+        46539769
+      ]
+    },
+    {
+      "schema": 1,
+      "sha256": "7e0d36655e6e788202d2d588429c45064bbf87caec95938ebb19a317947c834e",
+      "imageSize": 0,
+      "game": "PathOfExile2",
+      "cpuSites": [
+        18065018,
+        42941310,
+        42941348,
+        42941683,
+        42941732,
+        45233041,
+        45233092,
+        45233253,
+        45233336,
+        45233389,
+        45233417,
+        45868725,
+        45868760,
+        45868913,
+        45868962,
+        45868991,
+        45956798,
+        46100093,
+        46100184,
+        46100436,
+        46539769
+      ]
+    },
+    {
+      "schema": 1,
+      "sha256": "a6e7b545ff73e6a25f23308289b32904f0beb9f041546f7d279df53a363ff33d",
+      "imageSize": 0,
+      "game": "PathOfExile",
+      "bootstrapper": true,
+      "cpuSites": []
+    },
+    {
+      "schema": 1,
+      "sha256": "a6e7b545ff73e6a25f23308289b32904f0beb9f041546f7d279df53a363ff33d",
+      "imageSize": 0,
+      "game": "PathOfExile2",
+      "bootstrapper": true,
+      "cpuSites": []
+    },
+    {
+      "schema": 1,
+      "sha256": "0ff4e0ef9eadc09d5bd8ca90c782e099db6db7290a092dec1f83cfe57220dd70",
+      "imageSize": 0,
+      "game": "PathOfExile",
+      "bootstrapper": true,
+      "cpuSites": []
+    },
+    {
+      "schema": 1,
+      "sha256": "0ff4e0ef9eadc09d5bd8ca90c782e099db6db7290a092dec1f83cfe57220dd70",
+      "imageSize": 0,
+      "game": "PathOfExile2",
+      "bootstrapper": true,
+      "cpuSites": []
+    },
+    {
+      "schema": 1,
+      "sha256": "a9dcfd95e1403e40efa2c83a703783a6ca75ab04491884c20c472e46cf165c9f",
+      "imageSize": 0,
+      "game": "PathOfExile",
+      "bootstrapper": true,
+      "cpuSites": []
+    },
+    {
+      "schema": 1,
+      "sha256": "a9dcfd95e1403e40efa2c83a703783a6ca75ab04491884c20c472e46cf165c9f",
+      "imageSize": 0,
+      "game": "PathOfExile2",
+      "bootstrapper": true,
+      "cpuSites": []
+    },
+    {
+      "schema": 1,
+      "sha256": "49a4b7895f7c181275a6df5b84c67548f98317d777b76140de2eac838e432c0a",
+      "imageSize": 0,
+      "game": "PathOfExile",
+      "bootstrapper": true,
+      "cpuSites": []
+    },
+    {
+      "schema": 1,
+      "sha256": "49a4b7895f7c181275a6df5b84c67548f98317d777b76140de2eac838e432c0a",
+      "imageSize": 0,
+      "game": "PathOfExile2",
+      "bootstrapper": true,
+      "cpuSites": []
+    },
+    {
+      "schema": 1,
+      "sha256": "7035b7cfc07214854263f8fd5be7c884ab27ecc1af910b492d16eb21d79771f4",
+      "imageSize": 0,
+      "game": "PathOfExile",
+      "bootstrapper": true,
+      "cpuSites": []
+    },
+    {
+      "schema": 1,
+      "sha256": "7035b7cfc07214854263f8fd5be7c884ab27ecc1af910b492d16eb21d79771f4",
+      "imageSize": 0,
+      "game": "PathOfExile2",
+      "bootstrapper": true,
+      "cpuSites": []
+    },
+    {
+      "schema": 1,
+      "sha256": "a58911c4aa5c15d6d2370768947c549963ea54442e230df883540680b31b2ab7",
+      "imageSize": 0,
+      "game": "PathOfExile",
+      "bootstrapper": true,
+      "cpuSites": []
+    },
+    {
+      "schema": 1,
+      "sha256": "a58911c4aa5c15d6d2370768947c549963ea54442e230df883540680b31b2ab7",
+      "imageSize": 0,
+      "game": "PathOfExile2",
+      "bootstrapper": true,
+      "cpuSites": []
+    },
+    {
+      "schema": 1,
+      "sha256": "2997429db82bf6a117c8a7539f34a26c2122a03b17866bfcba865c28b9c8d7e2",
+      "imageSize": 0,
+      "game": "PathOfExile",
+      "bootstrapper": true,
+      "cpuSites": []
+    }
+  ],
+  "renderRecipes": [
+    {
+      "id": "poe1-dx11-app-330-v1",
+      "game": "PathOfExile",
+      "renderer": "DX11",
+      "appOffset": 168,
+      "flagOffset": 9,
+      "reader": {
+        "bytes": "488b83a8000000807809000f94c2488bcbe800000000",
+        "mask": "ffffffffffffffffffffffffffffffffffff00000000",
+        "offset": 0
+      },
+      "gate": {
+        "bytes": "00004885c97400488b01488d95c8060000483bca0f95c2ff50204c89ad00070000488b8dc00c00004885c97400488b01488d95880c0000483bca0f95c2ff502080bde8120000000f8400000000488d0500000000488985c80c00004c89a5d00c0000488d85c80c0000488985000d0000b80f00000066898508070000c7850c07",
+        "mask": "ffffffffffff00ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00ffffffffffffffffffffffffffffffffffffffffffffffffffffffff00000000ffffff00000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+        "offset": 64
+      },
+      "methods": [
+        {
+          "bytes": "48895c2408574883ec208bda488bf9e800000000f6c3017400ba40040000488bcfe800000000488b5c2430488bc74883c4205fc3",
+          "mask": "ffffffffffffffffffffffffffffffff00000000ffffffff00ffffffffffffffffff00000000ffffffffffffffffffffffffffff",
+          "offset": 0
+        },
+        {
+          "bytes": "c20000",
+          "mask": "ffffff",
+          "offset": 0
+        },
+        {
+          "bytes": "c20000",
+          "mask": "ffffff",
+          "offset": 0
+        },
+        {
+          "bytes": "c20000",
+          "mask": "ffffff",
+          "offset": 0
+        },
+        {
+          "bytes": "c20000",
+          "mask": "ffffff",
+          "offset": 0
+        },
+        {
+          "bytes": "c20000",
+          "mask": "ffffff",
+          "offset": 0
+        },
+        {
+          "bytes": "4883ec28488b0d00000000e800000000488b0d00000000e800000000488b0d000000004883c428e900000000",
+          "mask": "ffffffffffffff00000000ff00000000ffffff00000000ff00000000ffffff00000000ffffffffff00000000",
+          "offset": 0
+        },
+        {
+          "bytes": "48895c240848896c2410488974241857415641574881ec90000000488bda488be9488b5128488b4920e800000000488b4520488945284c8d5c24484c895c2430488d5424484889542438488d84248800000048894424404c8b7308488b33493bf60f84000000004533ff660f1f4400004c8bc6488bd5488d4c2420e800000000488bd8488b4d3048394d287200488d4d20e800000000488b55284c893a4c897a08488b0b48890a488b4308488942084c893b4c897b084883452810488b5c24284885db7400b8fffffffff00fc1430883f8017500488b03488bcbff10b8fffffffff00fc1430c83f8017500488b03488bcbff5008488b4528488b40f04885c07400488b00eb00498bc78b9814010000488b442438483b442440720041b9040000004533c0488d542448488d4c2430e800000000488b4424388918488b5424384883c20448895424384883c640493bf60f85000000004c8b5c2430492bd383e2fc41b87b1a8fc5498bcbe800000000898538010000488d4424484c3bd874004d85db7400498b4bf848c1e92041b80100000049d3e0498b53f04903d048f7daf0480115000000004d2bd8498bcbe8000000004c8d9c2490000000498b5b20498b6b28498b7330498be3415f415e5fc3",
+          "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00000000ffffffffffffffffffffffffffffffffffffffffff00000000ffffffffffffffffffffffff00ffffffffff00000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00ffffffffffffffffffffffffffff00ffffffffffffffffffffffffffffffffffffffffffff00ffffffffffffffffffffffffffffffffffffffffff00ffffffff00ffffffffffffffffffffffffffffffffffffffff00ffffffffffffffffffffffffffffffffffffffff00000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00000000ffffffffffffffffffffffffffffffffffffffffff00000000ffffffffffffffffffffffffffffff00ffffffff00ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00000000ffffffffffffff00000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+          "offset": 0
+        }
+      ]
+    }
+  ],
+  "ignoredCpuidPatterns": [
+    {
+      "bytes": "4d3bd0490f47c84885c9741e4c8d0d3a0fa2020fb70266413b0175154883c2024983",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "offset": 16
+    },
+    {
+      "bytes": "d072027613498d8bb0010000488d150e0fa202e879f0a5ff488b868803000081a0e0",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "offset": 16
+    },
+    {
+      "bytes": "0da200f80da200b10ea200e10ea200220fa2006f12a2006f12a2004d0fa2004d0fa2",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "offset": 16
+    },
+    {
+      "bytes": "0ea200220fa2006f12a2006f12a2004d0fa2004d0fa2006d12a200c40fa2001c10a2",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "offset": 16
+    },
+    {
+      "bytes": "0fa2006f12a2006f12a2004d0fa2004d0fa2006d12a200c40fa2001c10a2006b10a2",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "offset": 16
+    },
+    {
+      "bytes": "12a2004d0fa2004d0fa2006d12a200c40fa2001c10a2006b10a200e010a2006f12a2",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "offset": 16
+    },
+    {
+      "bytes": "07a1160275a11602498d1602e5a116020fa2160248a21602faa1160224a21602659f",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "offset": 16
+    }
+  ]
+}
