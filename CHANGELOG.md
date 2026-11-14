@@ -1,3 +1,9 @@
+## 1.0.20 - 2026-11-14
+
+- Faster owned game-window activation and overlapping previous-window headless caching.
+- Preserve native modules and saved identities; add safe presentation-phase timings.
+- Home-PC three-profile PoE1 login-screen checks pass; no universal timing or gameplay claim.
+
 ## 1.0.19 - 2026-11-14
 
 - Structural game-image recognition, validated local cache and independently updated compatibility data.
