@@ -27,3 +27,10 @@ MultiABF 1.0.0 поддерживает запуск PoE1/DPB1 и PoE2/DPB2. DPB
 Автообновление игры включено по умолчанию и управляется в общих настройках. Работает штатный загрузчик вне песочницы, до запуска профиля. Работающая игра блокирует обновление своей установки. Отмена ждёт безопасного завершения обновления и не запускает профиль. Steam обновляется через Steam. DPB и плагины эта функция не обновляет.
 
 На другом компьютере выберите его пути игр/DPB и создайте локальные профили. Перенос файлов не переносит привязанные к Windows секреты и не создаёт пользователей Windows. При удалении остановленного профиля удаляется также отдельный пользователь Windows, созданный MultiABF для него; это указано в подтверждении. Чужие пользователи и процессы исключены.
+
+
+## Independent DPB settings / Отдельные настройки DPB
+
+Each MultiABF profile owns its DPB settings. The selected DPB installation supplies the first template once; later launches and component updates retain that profile's native configuration choice and saved bot/routine/mover/plugin settings. Edit and save them inside DPB. Copying a stopped profile copies the saved DPB settings into independent files. Close its DPB before copying. Existing saved configurations are retained. Game-login/account files and login-plugin activation are excluded, and MultiABF does not press Start in a bot. This storage behavior is common to DPB1/DPB2; compatibility of their SDK with a particular game patch remains a separate requirement.
+
+У каждого профиля MultiABF свои настройки DPB. При первом запуске начальные настройки берутся из выбранной установки DPB; следующие запуски и обновления компонентов сохраняют выбранную конфигурацию и параметры бота, рутины, перемещения и плагинов. Изменяйте и сохраняйте их в DPB. Копирование переносит сохранённые настройки в отдельные файлы нового профиля; перед копированием закройте его DPB. Ранее сохранённые конфигурации сохраняются. Игровые аккаунты, файлы автологина и включение соответствующих плагинов не копируются; MultiABF не нажимает Start в боте. Механизм общий для DPB1/DPB2; совместимость SDK DPB с патчем игры проверяется отдельно.

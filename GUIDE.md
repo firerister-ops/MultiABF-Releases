@@ -187,3 +187,12 @@ GPU savings do not establish RAM/VRAM savings or a fixed number of in-game clien
 ## Starting multiple prepared profiles
 
 Use Start selected or Start all to launch ready profiles concurrently. Initial profile preparation may take longer. Ready profiles do not wait for a previous game window; memory and GPU admission still apply. Stop cancels the selected profile launch. Updating identity-related settings or components may require preparation again.
+
+
+## Updating MultiABF / Обновление MultiABF
+
+From 1.0.22, **Settings → Updates** shows the installed version, update status and download progress. Automatic updates are on by default: check at launch and every six hours, download in the background and install on the next launch only when no profile, DPB or launch cleanup is active. **Check for updates** checks/downloads manually; **Restart and update** is enabled after a verified download while everything is stopped. Change the automatic checkbox with the ordinary Save button. Profiles, generated IDs and saved game/DPB settings are retained. A damaged or untrusted download is not installed; failed installations keep rollback/recovery data. A failed artifact is not retried automatically until you explicitly check again or a newer release appears.
+
+Начиная с 1.0.22, в **Настройки → Обновления** видны установленная версия, статус и прогресс загрузки. Автообновление включено по умолчанию: проверка при запуске и каждые шесть часов, скачивание в фоне, установка при следующем запуске только после остановки профилей, DPB и завершения очереди. **Проверить обновления** проверяет и скачивает вручную; **Перезапустить и обновить** доступна после проверки файла, когда всё остановлено. Флажок автообновления сохраняется обычной кнопкой «Сохранить». Профили, ID и настройки игры/DPB сохраняются. Повреждённое или неподписанное обновление не устанавливается; при сбое остаются данные отката. Неудачная версия автоматически повторно не устанавливается до явной повторной проверки либо появления новой версии.
+
+Versions before 1.0.22 have no application updater. Download and install 1.0.22 once manually; subsequent releases can update automatically. / В версиях до 1.0.22 этого механизма нет: один раз скачайте и установите 1.0.22 вручную, дальше обновления смогут приходить автоматически.

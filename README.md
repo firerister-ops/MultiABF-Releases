@@ -8,10 +8,10 @@
 
 MultiABF is a Windows desktop application for creating persistent game profiles and switching between their windows from a single overview. Each profile keeps its own settings and generated identity. Direct mode supports launches without Sandboxie, including separate standard Windows users. Optional DPB integration starts the matching DPB installation for that profile.
 
-**[Download MultiABF 1.0.21](https://github.com/firerister-ops/MultiABF-Releases/releases/tag/v1.0.21)** · [User guide](GUIDE.md) · [Risks and limitations](RISKS.md) · [DPB setup](DPB.md) · [Data storage](DATA.md) · [Troubleshooting](TROUBLESHOOTING.md)
+**[Download MultiABF 1.0.22](https://auth.aibotforge.pro/updates/multiabf/MultiABF-1.0.22.exe)** · [GitHub release](https://github.com/firerister-ops/MultiABF-Releases/releases/tag/v1.0.22) · [User guide](GUIDE.md) · [Risks and limitations](RISKS.md) · [DPB setup](DPB.md) · [Data storage](DATA.md) · [Troubleshooting](TROUBLESHOOTING.md)
 
 
-**Stable 1.0.21 reduces navigation-click latency and improves game-window opening while retaining automatic patch compatibility.** Direct provides the implemented per-process policies and separate-account launches; see the documented isolation limits. Back up profile data before updating.
+**Stable 1.0.22 adds signed background application updates and independent saved DPB configurations for each profile.** Direct provides the implemented per-process policies and separate-account launches; see the documented isolation limits. Back up profile data before updating.
 
 > Read the [risks](RISKS.md) before using game accounts. MultiABF does not guarantee protection from account sanctions, anonymity or compatibility with every game/DPB/plugin update. DPB is installed separately; MultiABF does not automatically press Start in a bot.
 
@@ -22,6 +22,7 @@ MultiABF is a Windows desktop application for creating persistent game profiles 
 | Feature | What you can do |
 | --- | --- |
 | PoE1 and PoE2 | Keep separate PoE1/DPB1 and PoE2/DPB2 executable paths and choose a game for each new profile. |
+| Application updates | Download verified stable releases in the background and install on the next launch while profiles and DPB are stopped. The Updates tab also offers manual checking and restart. Older versions need one initial manual update. |
 | Persistent profiles | Create, rename, copy and delete profiles. Saved profile identifiers survive restarts; a copy receives its own identifiers. |
 | Profile IDs | Hover over ID for compact CPU/GPU/RAM and preparation states; click for grouped, scrollable values. New Direct profiles select the complete supported bundle, including current-user/admin CPU, GPU description, Vulkan UUID and Windows group/owner. The full catalogue stays local and out of reports. |
 | Multiple GPUs | Optionally distribute Direct DX11/DX12 launches across dedicated GPUs, counting pending and cached clients. Off by default. |

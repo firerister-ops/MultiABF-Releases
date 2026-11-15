@@ -1,3 +1,9 @@
+## 1.0.22 - 2026-11-15
+
+- Signed background application updates, idle-only replacement/restart, an Updates settings tab, downgrade prevention and local rollback/recovery.
+- Per-profile native DPB configuration seeding, remembered selection, independent copied settings and preservation across component refreshes.
+- Product HTTPS update channel with one current stable server artifact; previous server EXEs are removed only after verified activation. Existing pre-updater installations require one manual update.
+
 ## 1.0.21 - 2026-11-15
 
 - Keep game/frame input queues independent, preserve original ownership and maintain relative z-order without focus transfer.
