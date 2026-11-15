@@ -34,3 +34,10 @@ MultiABF 1.0.0 поддерживает запуск PoE1/DPB1 и PoE2/DPB2. DPB
 Each MultiABF profile owns its DPB settings. The selected DPB installation supplies the first template once; later launches and component updates retain that profile's native configuration choice and saved bot/routine/mover/plugin settings. Edit and save them inside DPB. Copying a stopped profile copies the saved DPB settings into independent files. Close its DPB before copying. Existing saved configurations are retained. Game-login/account files and login-plugin activation are excluded, and MultiABF does not press Start in a bot. This storage behavior is common to DPB1/DPB2; compatibility of their SDK with a particular game patch remains a separate requirement.
 
 У каждого профиля MultiABF свои настройки DPB. При первом запуске начальные настройки берутся из выбранной установки DPB; следующие запуски и обновления компонентов сохраняют выбранную конфигурацию и параметры бота, рутины, перемещения и плагинов. Изменяйте и сохраняйте их в DPB. Копирование переносит сохранённые настройки в отдельные файлы нового профиля; перед копированием закройте его DPB. Ранее сохранённые конфигурации сохраняются. Игровые аккаунты, файлы автологина и включение соответствующих плагинов не копируются; MultiABF не нажимает Start в боте. Механизм общий для DPB1/DPB2; совместимость SDK DPB с патчем игры проверяется отдельно.
+
+
+## Game-patch compatibility / Совместимость с патчем игры
+
+If DPB reports that it cannot recognize the game build, update the matching DPB installation to a version compatible with that game patch. MultiABF retains the profile settings; a running DPB process alone is not a confirmed SDK connection. This MultiABF release does not update the external DPB SDK.
+
+Если DPB сообщает, что не распознал сборку игры, нужна версия DPB, совместимая с этим патчем. MultiABF сохраняет настройки профиля; работающий процесс DPB сам по себе не означает подтверждённого подключения SDK. Этот релиз MultiABF не обновляет внешний SDK DPB.

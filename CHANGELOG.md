@@ -1,3 +1,10 @@
+## 1.0.23 - 2026-11-15
+
+- Preserve all selected Direct identities when a patched game hands off to a new executable child.
+- Add verified compatibility data for the measured current PoE1 and PoE2 executable layouts; retain newer bundled/downloaded catalogs instead of downgrading them.
+- Correct normal DPB closure when its settings window is open, and show a readable error when DPB cannot recognize the game build.
+- Keep existing profile IDs and saved settings. DPB SDK compatibility is separate; no further DPB tests were performed for this release.
+
 ## 1.0.22 - 2026-11-15
 
 - Signed background application updates, idle-only replacement/restart, an Updates settings tab, downgrade prevention and local rollback/recovery.

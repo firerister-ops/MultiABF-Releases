@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "revision": "2026-11-14.1",
+  "revision": "2026-11-15.1",
   "builds": [
     {
       "schema": 1,
@@ -656,6 +656,16 @@
     {
       "bytes": "07a1160275a11602498d1602e5a116020fa2160248a21602faa1160224a21602659f",
       "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "offset": 16
+    },
+    {
+      "bytes": "d0897c24204c8d0dbe15a2014c8d058f0fa20133d2488bc8e8417b24004885c0",
+      "mask": "ffffffffffffffff00000000ffffff00000000ffffffffffff00000000ffffff",
+      "offset": 16
+    },
+    {
+      "bytes": "f2a29a02b9a29a0280a29a0247a29a020fa29a02d7a19a029fa19a0267a19a02",
+      "mask": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
       "offset": 16
     }
   ]
