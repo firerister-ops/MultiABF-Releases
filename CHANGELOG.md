@@ -1,3 +1,11 @@
+## 1.0.24 - 2026-11-15
+
+- Reuse unchanged verified Direct ID channels across unrelated launcher updates; validate changed channel components, settings and account/hardware-dependent inputs.
+- Prepare only channels that require a fresh check, preserving ready profile identifiers and their existing proof.
+- Recover headless startup capture automatically when the game has not presented its first frame. Native errors, ownership failures and failed restoration remain blocking.
+- Pre-release Home-PC verification starts20prepared PoE1 profiles without DPB in61.3seconds; all120channel receipts remain unchanged and all20reach headless, including two automatically recovered frame timeouts. This is a login-screen observation, not a universal timing or gameplay-capacity guarantee.
+- Stable packaging passes173protected non-DPB checks. No further game or DPB tests are part of this release.
+
 ## 1.0.23 - 2026-11-15
 
 - Preserve all selected Direct identities when a patched game hands off to a new executable child.
