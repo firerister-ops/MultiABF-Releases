@@ -8,10 +8,10 @@
 
 MultiABF is a Windows desktop application for creating persistent game profiles and switching between their windows from a single overview. Each profile keeps its own settings and generated identity. Profiles use Direct, including optional separate standard Windows users. Optional DPB integration starts the matching DPB installation for that profile.
 
-**[Download MultiABF 1.0.25](https://auth.aibotforge.pro/updates/multiabf/MultiABF-1.0.25.exe)** · [GitHub release](https://github.com/firerister-ops/MultiABF-Releases/releases/tag/v1.0.25) · [User guide](GUIDE.md) · [Risks and limitations](RISKS.md) · [DPB setup](DPB.md) · [Data storage](DATA.md) · [Troubleshooting](TROUBLESHOOTING.md)
+**[Download MultiABF 1.0.26](https://auth.aibotforge.pro/updates/multiabf/MultiABF-1.0.26.exe)** · [GitHub release](https://github.com/firerister-ops/MultiABF-Releases/releases/tag/v1.0.26) · [User guide](GUIDE.md) · [Risks and limitations](RISKS.md) · [DPB setup](DPB.md) · [Data storage](DATA.md) · [Troubleshooting](TROUBLESHOOTING.md)
 
 
-**Stable 1.0.25 removes the Sandboxie backend and continues after individual ID failures, with clear warnings in the ID table.** Successful channels and saved values are retained. The application is approximately half the previous download size.
+**Stable 1.0.26 retains fresh process-exit evidence and clearer report-upload rejection reasons.** Direct-only profiles, visible per-ID failures and the smaller application package from 1.0.25 are retained.
 
 > Read the [risks](RISKS.md) before using game accounts. MultiABF does not guarantee protection from account sanctions, anonymity or compatibility with every game/DPB/plugin update. DPB is installed separately; MultiABF does not automatically press Start in a bot.
 

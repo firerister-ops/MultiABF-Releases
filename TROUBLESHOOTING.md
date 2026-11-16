@@ -8,6 +8,13 @@ If profile deletion fails, the profile is retained with pending cleanup. Use Del
 
 For bug reports include the MultiABF release, Windows version, the action performed and the displayed error code. Do not post proxy passwords, account credentials, raw client logs or screenshots containing account information.
 
+## Unexpected game exit and HTTP 429
+
+Version 1.0.26 refreshes exit evidence at terminal Direct cleanup. An exit code/time may still be unavailable when Windows cannot supply them; Unknown does not identify who closed the game or prove a crash cause. Use a fresh diagnostic archive for a repeated failure.
+
+HTTP 429 concerns report delivery after the failure, not the game itself. The local archive stays pending. Retry after the server limit clears; the same report ID and bytes are reused. From 1.0.26, recognized server reason codes distinguish rate limiting from upload_busy when the server supplies that detail.
+
+
 ## ID! or a red ID row (1.0.25)
 
 Open ID and expand the marked group for its reason. A failed optional ID channel uses system values; other verified channels continue. Assigned values/settings are retained. Retry using the existing profile preparation after resolving the cause. Ordinary starts do not repeatedly deep-check a remembered failure. Reports include error codes and safe hardware catalogue failure facts, not the full local identifiers.

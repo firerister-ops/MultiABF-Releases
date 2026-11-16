@@ -1,3 +1,10 @@
+## 1.0.26 - 2026-11-16
+
+- Refresh final held-process exit evidence when Direct cleanup changes the profile to Stopped; preserve actual exit codes/time without inventing user intent.
+- Keep recognized report-server rate-limit/upload-busy reasons beside HTTP status, without retaining raw error bodies.
+- Preserve local pending report archives and the same upload ID/bytes on existing retry paths. No server-limit change or new automatic resend loop.
+- The original game exit cause is not established by the old sample. No game/DPB/load run is part of this diagnostic release.
+
 ## 1.0.25 - 2026-11-16
 
 - Direct-only profiles for PoE1/PoE2; remove Sandboxie backend/installer/settings while retaining legacy data and optional separate Windows users.
