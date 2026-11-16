@@ -1,3 +1,9 @@
+## 1.0.31 - Stable, 2026-11-17
+
+- Store terminal DPB state before reporting an unexpected exit. Include process/worker identity, initialization evidence and signed/hexadecimal exit code; exclude executable paths.
+- Recognize already observed worker closure and pending closure so they do not create unrequested-exit errors. Shared PoE1/PoE2 behavior.
+- Preserve DPB launch/close commands and independent profile settings.
+
 ## 1.0.30 - Stable, 2026-11-17
 
 - Record why an occupied game installation blocks the official update check: shared game files or a failed Windows process query, with PID, Windows error and prior readiness state.
