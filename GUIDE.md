@@ -79,6 +79,20 @@ Select **Create profile**, enter a recognizable name and choose a game. Press **
 
 Each profile keeps its generated identifiers and settings across restarts. **Copy** creates another profile with its own identifiers. Renaming does not generate a new identity. Do not manually swap account bindings or profile folders between machines; see [data storage](DATA.md).
 
+## Accounts and proxies
+
+Open **Proxy** in the top toolbar. The same window contains **Proxies** and **Accounts** tabs.
+
+On Proxies, paste one proxy per line in the top field or choose **File…** to import TXT/CSV, then press **Add list**. Supported forms include `socks5://user:password@host:port`, `host:port:user:password`, `host:port` and a host with the common port below. Common port/login/password values fill only missing fields. CSV column mode supports quoted fields. Invalid rows and duplicates are reported separately so valid rows can be added.
+
+Saved proxies appear in the table below. Edit fields and **Save**, or **Cancel** to discard changes. Use the **+** button below the list to create an empty row. Field context menus and row actions provide copying, including explicit password copying. Passwords are masked by default. Empty password input keeps an existing password; the explicit clear action removes it.
+
+New and changed proxies are checked automatically. Green **Available** means an HTTP request through SOCKS5 succeeded; red **Unavailable** means it failed. The duration is the response time for that request, not ICMP ping. **Check selected** repeats checks. This does not establish the game's actual route. Search and filters show free, assigned or unavailable entries; the owner column identifies account/profile assignments.
+
+On Accounts, add a name, login, optional password, proxy and optional character names for PoE1/PoE2. Save the account, then select it in a profile's **Connection** settings. Its proxy follows the account assignment. Sharing a proxy across accounts requires confirmation. Changing saved assignments applies on the next launch. Profiles without a library account can continue to use their independent connection settings.
+
+Copies retain the selected account/proxy reference while receiving independent profile identifiers and game configuration. Deleting a profile retains library entries; assigned entries cannot be deleted until unlinked. Saved accounts and proxies survive an ordinary application restart. Passwords are protected locally and are not included in diagnostic archives or ordinary API list responses. Game sign-in remains manual; no automatic login is included.
+
 ## Window wall and profile actions
 
 ![Window wall](images/wall.png)

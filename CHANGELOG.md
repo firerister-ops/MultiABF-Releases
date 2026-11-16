@@ -1,3 +1,12 @@
+## 1.0.27 - 2026-11-16
+
+- Open Proxy in the top toolbar. Paste a list at the top or import TXT/CSV, then edit saved proxies in the table below. Common port/login/password fields fill missing values. The + button adds an empty row; fields can be copied and edited.
+- New and changed proxies are checked automatically. Green/red status and response time show whether an HTTP request through SOCKS5 succeeds. This is not ICMP ping or proof of game routing.
+- Keep named accounts and their assigned proxies in one place, see free/assigned proxies and select an account when creating or editing a profile. Both PoE1 and PoE2 are supported.
+- Accounts and proxies persist after profile deletion. Copies retain the selected account/proxy while receiving independent profile IDs and configuration files.
+
+Passwords remain in Windows Credential Manager and are excluded from ordinary API lists and diagnostic archives. Game sign-in remains manual; automatic login is not included.
+
 ## 1.0.26 - 2026-11-16
 
 - Refresh final held-process exit evidence when Direct cleanup changes the profile to Stopped; preserve actual exit codes/time without inventing user intent.

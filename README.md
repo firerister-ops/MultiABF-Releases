@@ -8,10 +8,10 @@
 
 MultiABF is a Windows desktop application for creating persistent game profiles and switching between their windows from a single overview. Each profile keeps its own settings and generated identity. Profiles use Direct, including optional separate standard Windows users. Optional DPB integration starts the matching DPB installation for that profile.
 
-**[Download MultiABF 1.0.26](https://auth.aibotforge.pro/updates/multiabf/MultiABF-1.0.26.exe)** · [GitHub release](https://github.com/firerister-ops/MultiABF-Releases/releases/tag/v1.0.26) · [User guide](GUIDE.md) · [Risks and limitations](RISKS.md) · [DPB setup](DPB.md) · [Data storage](DATA.md) · [Troubleshooting](TROUBLESHOOTING.md)
+**[Download MultiABF 1.0.27](https://auth.aibotforge.pro/updates/multiabf/MultiABF-1.0.27.exe)** · [GitHub release](https://github.com/firerister-ops/MultiABF-Releases/releases/tag/v1.0.27) · [User guide](GUIDE.md) · [Risks and limitations](RISKS.md) · [DPB setup](DPB.md) · [Data storage](DATA.md) · [Troubleshooting](TROUBLESHOOTING.md)
 
 
-**Stable 1.0.26 retains fresh process-exit evidence and clearer report-upload rejection reasons.** Direct-only profiles, visible per-ID failures and the smaller application package from 1.0.25 are retained.
+**Stable 1.0.27 adds a shared accounts and proxy library.** Bulk import, editable proxy rows, automatic availability checks and response times are available from **Proxy** in the top toolbar. Game sign-in remains manual.
 
 > Read the [risks](RISKS.md) before using game accounts. MultiABF does not guarantee protection from account sanctions, anonymity or compatibility with every game/DPB/plugin update. DPB is installed separately; MultiABF does not automatically press Start in a bot.
 
@@ -32,6 +32,7 @@ MultiABF is a Windows desktop application for creating persistent game profiles 
 | Live status | See the game PID, CPU, RAM, per-game GPU usage when available and DPB state in one line. The header shows overall machine load. |
 | Window switching | Return to the wall, move to the previous/next running window, change hotkeys and set the active-window size. The active game view participates in Alt+Tab. |
 | Per-profile display | Set resolution and separate foreground/background FPS limits. |
+| Accounts and proxies | Import TXT/CSV or paste lists, edit/copy proxy fields, check availability and response time, and assign named accounts/proxies to profiles. Passwords stay in Windows Credential Manager; game sign-in remains manual. |
 | Optional SOCKS5 | Configure a separate connection for a profile, including authentication. Connection checks and the actual game-route check are distinct. |
 | Resource limits | Optionally cap CPU and memory use for a profile. Limits do not reserve resources or guarantee a particular FPS. |
 | DPB integration | Launch the appropriate DPB against the managed game PID with private per-profile components/settings. ControlPanel is not required. |
