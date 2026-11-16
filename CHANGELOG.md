@@ -1,3 +1,11 @@
+## 1.0.29 - 2026-11-17
+
+- Expanded launch details now show a multiline evidence pane instead of inheriting the34px height of a normal input.
+- The pane adapts to the diagnostic window height. Vertical/horizontal scrolling and full-text selection remain available.
+- Keep existing search, filters, stages, refresh, report submission and archive actions.
+
+Verified on the actual protected WPF window in English/Russian at960×740 and760×560. No game or DPB test is included.
+
 ## 1.0.28 - 2026-11-16
 
 - Denying an unsupported auxiliary child no longer stops an already prepared game. The child remains blocked; required policies on accepted game handoffs are still enforced.
