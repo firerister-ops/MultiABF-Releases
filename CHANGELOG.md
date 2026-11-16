@@ -1,3 +1,8 @@
+## 1.0.30 - Stable, 2026-11-17
+
+- Record why an occupied game installation blocks the official update check: shared game files or a failed Windows process query, with PID, Windows error and prior readiness state.
+- Preserve valid update-check reuse and leave existing clients running. Reports exclude paths and credentials. Shared behavior for PoE1 and PoE2.
+
 ## 1.0.29 - 2026-11-17
 
 - Expanded launch details now show a multiline evidence pane instead of inheriting the34px height of a normal input.
