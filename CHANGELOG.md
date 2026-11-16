@@ -1,3 +1,12 @@
+## 1.0.28 - 2026-11-16
+
+- Denying an unsupported auxiliary child no longer stops an already prepared game. The child remains blocked; required policies on accepted game handoffs are still enforced.
+- Keep successfully verified WMI identity channels when another diagnostic fails DLL initialization and its cleanup is confirmed. Unfinished cleanup remains blocking.
+- Show a specific error when the official game updater cannot reach the patch server.
+- Include the missing Direct DLL/EXE name in diagnostics without exposing its full path.
+
+The account/proxy library from 1.0.27 is retained. These fixes do not change game login, bypass updates or allow unprotected child processes. No game or DPB test is included.
+
 ## 1.0.27 - 2026-11-16
 
 - Open Proxy in the top toolbar. Paste a list at the top or import TXT/CSV, then edit saved proxies in the table below. Common port/login/password fields fill missing values. The + button adds an empty row; fields can be copied and edited.
