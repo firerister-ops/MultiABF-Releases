@@ -1,3 +1,11 @@
+## 1.0.25 - 2026-11-16
+
+- Direct-only profiles for PoE1/PoE2; remove Sandboxie backend/installer/settings while retaining legacy data and optional separate Windows users.
+- Continue after individual ID failures, keep independently verified channels and assigned values, and show red Failed rows plus ID! on profile cards.
+- Reuse unchanged ID proofs, retain valid WMI subsets on explicit retry, improve safe hardware-model failure diagnostics and fix live warning-label localization.
+- Keep required EXE/account/proxy/privacy and ownership/cleanup errors blocking. Full ID values remain local.
+- Reduce the sole EXE from about 599 to 301 MB. No new game/DPB/load runs are part of this release.
+
 ## 1.0.24 - 2026-11-15
 
 - Reuse unchanged verified Direct ID channels across unrelated launcher updates; validate changed channel components, settings and account/hardware-dependent inputs.

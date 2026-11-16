@@ -6,12 +6,12 @@
 
 <p align="center"><strong>One workspace for independent Path of Exile 1 and Path of Exile 2 windows.</strong></p>
 
-MultiABF is a Windows desktop application for creating persistent game profiles and switching between their windows from a single overview. Each profile keeps its own settings and generated identity. Direct mode supports launches without Sandboxie, including separate standard Windows users. Optional DPB integration starts the matching DPB installation for that profile.
+MultiABF is a Windows desktop application for creating persistent game profiles and switching between their windows from a single overview. Each profile keeps its own settings and generated identity. Profiles use Direct, including optional separate standard Windows users. Optional DPB integration starts the matching DPB installation for that profile.
 
-**[Download MultiABF 1.0.24](https://auth.aibotforge.pro/updates/multiabf/MultiABF-1.0.24.exe)** · [GitHub release](https://github.com/firerister-ops/MultiABF-Releases/releases/tag/v1.0.24) · [User guide](GUIDE.md) · [Risks and limitations](RISKS.md) · [DPB setup](DPB.md) · [Data storage](DATA.md) · [Troubleshooting](TROUBLESHOOTING.md)
+**[Download MultiABF 1.0.25](https://auth.aibotforge.pro/updates/multiabf/MultiABF-1.0.25.exe)** · [GitHub release](https://github.com/firerister-ops/MultiABF-Releases/releases/tag/v1.0.25) · [User guide](GUIDE.md) · [Risks and limitations](RISKS.md) · [DPB setup](DPB.md) · [Data storage](DATA.md) · [Troubleshooting](TROUBLESHOOTING.md)
 
 
-**Stable 1.0.24 reuses unchanged verified profile IDs and automatically recovers headless capture while a new client is waiting for its first frame.** Direct provides the implemented per-process policies and separate-account launches; see the documented isolation limits. Back up profile data before updating.
+**Stable 1.0.25 removes the Sandboxie backend and continues after individual ID failures, with clear warnings in the ID table.** Successful channels and saved values are retained. The application is approximately half the previous download size.
 
 > Read the [risks](RISKS.md) before using game accounts. MultiABF does not guarantee protection from account sanctions, anonymity or compatibility with every game/DPB/plugin update. DPB is installed separately; MultiABF does not automatically press Start in a bot.
 
@@ -24,10 +24,10 @@ MultiABF is a Windows desktop application for creating persistent game profiles 
 | PoE1 and PoE2 | Keep separate PoE1/DPB1 and PoE2/DPB2 executable paths and choose a game for each new profile. |
 | Application updates | Download verified stable releases in the background and install on the next launch while profiles and DPB are stopped. The Updates tab also offers manual checking and restart. Older versions need one initial manual update. |
 | Persistent profiles | Create, rename, copy and delete profiles. Saved profile identifiers survive restarts; a copy receives its own identifiers. |
-| Profile IDs | Hover over ID for compact CPU/GPU/RAM and preparation states; click for grouped, scrollable values. New Direct profiles select the complete supported bundle, including current-user/admin CPU, GPU description, Vulkan UUID and Windows group/owner. The full catalogue stays local and out of reports. |
+| Profile IDs | Hover over ID for compact CPU/GPU/RAM and preparation states; click for grouped, scrollable values. New Direct profiles select the complete supported bundle, including current-user/admin CPU, GPU description, Vulkan UUID and Windows group/owner. A failed channel is marked red; ID! warns on the card. Failed IDs use system values while independent verified channels remain active. The full catalogue stays local and out of reports. |
 | Multiple GPUs | Optionally distribute Direct DX11/DX12 launches across dedicated GPUs, counting pending and cached clients. Off by default. |
 | Memory and pagefile | See Windows committed memory, configure bounded automatic pagefile growth and save a smaller size for the next Windows startup. |
-| Profile isolation | Choose Sandboxie containers or Direct mode with profile-specific game configuration and generated hardware/Windows identity values. Optional separate standard Windows users provide an additional account boundary. |
+| Profile isolation | Direct mode keeps profile-specific game configuration and generated hardware/Windows identity values. Optional separate standard Windows users provide an additional account boundary. |
 | Window wall | Select a grid, see window previews and open a running game for direct interaction. Actions stay at the top right of each card. |
 | Live status | See the game PID, CPU, RAM, per-game GPU usage when available and DPB state in one line. The header shows overall machine load. |
 | Window switching | Return to the wall, move to the previous/next running window, change hotkeys and set the active-window size. The active game view participates in Alt+Tab. |
@@ -44,7 +44,7 @@ MultiABF is a Windows desktop application for creating persistent game profiles 
 ## Start in five steps
 
 1. Download **MultiABF.exe** and **SHA256SUMS.txt** from the release. Compare the checksum and put the EXE in a permanent folder.
-2. Run MultiABF. Allow required prerequisite/driver setup. The EXE includes .NET and the pinned Sandboxie installer; a missing supported Visual C++ runtime is downloaded from Microsoft and verified before installation.
+2. Run MultiABF. Allow required prerequisite/driver setup. The EXE includes .NET; a missing supported Visual C++ runtime is downloaded from Microsoft and verified before installation.
 3. Open **Settings → General**. Select your game executable and, if used, its matching DPB executable. These must be paths on this computer.
 4. Select **Create profile**, choose the game and display settings, then **Create**. Creation saves the profile; it does not start the game.
 5. Press the profile's **Start** button. Wait for startup to finish, open its window, then sign in directly in the game. Use **DPB** only if you want to launch DPB. Bot Start remains a separate action.
@@ -67,7 +67,7 @@ Screenshots show the actual **1.0.0** release in **English**, captured through i
 
 - Windows x64, Windows 10 build 19041 or later, with Windows Graphics Capture support. Actual capacity depends on RAM, GPU, CPU and game settings.
 - Separately installed PoE1 and/or PoE2. DPB and its plugins/license are optional and supplied separately.
-- The pinned backend is Sandboxie core **5.73.4 / Plus 1.18.4**. An existing different Sandboxie version is not automatically replaced. Installation of drivers/services or managed Windows accounts can require administrator permission.
+- The current application uses Direct only. Sandboxie services/drivers are not installed or removed by this release. Legacy Sandboxie profile data is retained; create new Direct profiles to use this version. Creating managed Windows accounts or changing the pagefile can require administrator permission.
 - First preparation is slower than reuse of a prepared profile; experimental separate-user mode can add substantial preparation time. No fixed launch time or client count is promised.
 
 Verification includes PoE1 managed runs and PoE2/DPB2 SDK attachment on owned test machines. It does not prove all gameplay paths, every hardware identity surface or third-party plugin stability. See [known limits and warnings](RISKS.md).
@@ -78,4 +78,4 @@ Use **Report a problem** in the main toolbar or Diagnostics. Include the expecte
 
 Profiles, settings and diagnostics live in the active data directory; **Settings → General → Open data folder** opens it. [Storage, backup and deletion details](DATA.md).
 
-MultiABF is proprietary freeware. This public repository contains documentation and binary releases, not application source. See [LICENSE.txt](LICENSE.txt) and [THIRD_PARTY_NOTICES.txt](THIRD_PARTY_NOTICES.txt). Sandboxie's own license/certificate requirements still apply; see the [official certificate information](https://sandboxie-plus.com/contribute/).
+MultiABF is proprietary freeware. This public repository contains documentation and binary releases, not application source. See [LICENSE.txt](LICENSE.txt) and [THIRD_PARTY_NOTICES.txt](THIRD_PARTY_NOTICES.txt). Third-party notices include historical components from older releases.

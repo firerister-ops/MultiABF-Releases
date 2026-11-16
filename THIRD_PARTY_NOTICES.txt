@@ -1,9 +1,9 @@
 MultiABF third-party distribution notice
 
-This application includes the original, unmodified Sandboxie-Plus x64 1.18.4
+Versions through 1.0.24 included the original, unmodified Sandboxie-Plus x64 1.18.4
 installer as an independent third-party distribution. Its signatures, names,
 copyright notices and licenses are retained. MultiABF does not obfuscate or
-relicense Sandboxie. The installer deploys the Sandboxie service and driver
+relicense Sandboxie. Version 1.0.25 no longer bundles this installer; these historical notices are retained. The older installer deploys the Sandboxie service and driver
 with Windows administrator permission.
 
 Original binary:

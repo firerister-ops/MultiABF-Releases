@@ -7,7 +7,7 @@
 - An existing default %LOCALAPPDATA%/MultiClient database is reused in place so its saved paths and account bindings remain valid. An explicitly configured data directory is preserved. Settings → Open data folder always opens the active root.
 - %LOCALAPPDATA%/MultiABF/runtime — shared native resources extracted from the EXE, grouped by content hash. These are application components, not per-profile identities.
 - %PROGRAMDATA%/MultiClient — shared helpers and necessary account/recovery files, accessible to the configured Windows account.
-- Sandboxie-managed directories — isolated profile game files.
+- Legacy Sandboxie-managed directories from older releases are retained, but are not used for new Direct profiles.
 - Windows-managed locations — service/driver registration and profiles for optional managed standard accounts.
 - The .NET host may use its standard temporary extraction directory for native runtime files.
 

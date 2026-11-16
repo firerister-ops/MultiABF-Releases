@@ -6,33 +6,29 @@ Button names below follow the English interface. Change the language under **Set
 
 ## Install and update MultiABF
 
-Download the EXE and checksum file from [official releases](https://github.com/firerister-ops/MultiABF-Releases/releases). Beta builds are marked pre-release. Keep the EXE in a permanent local folder. To check the downloaded file in PowerShell, run `Get-FileHash -Algorithm SHA256 'C:\Tools\MultiABF\MultiABF.exe'` using your actual path, then compare the result with SHA256SUMS.txt.
+Download the EXE and checksum file from [official releases](https://github.com/firerister-ops/MultiABF-Releases/releases). Keep the EXE in a permanent local folder. To check the downloaded file in PowerShell, run `Get-FileHash -Algorithm SHA256 'C:\Tools\MultiABF\MultiABF.exe'` using your actual path, then compare the result with SHA256SUMS.txt.
 
-On first run, complete prerequisite setup. MultiABF bundles its .NET runtime and the pinned Sandboxie installer. If Visual C++ x64 Runtime is missing or too old, its pinned Microsoft installer is downloaded and checked. Windows may request elevation for installation. Do not disable system protection to dismiss a warning; verify the download source and read the [risk notes](RISKS.md).
+On first run, complete prerequisite setup. MultiABF bundles its .NET runtime. If Visual C++ x64 Runtime is missing or too old, its pinned Microsoft installer is downloaded and checked. Windows may request elevation for installation. Do not disable system protection to dismiss a warning; verify the download source and read the [risk notes](RISKS.md).
 
-In **1.0.6**, Sandboxie is optional and is not installed at startup. Enable
-the mode in General settings and press **Install components** to install it.
-Direct profiles work without it; saved Sandboxie profiles keep their backend.
-In a stopped profile's settings, the Sandboxie selection chooses that backend;
-turn it off for Direct. Separate Windows users remain a separate profile choice.
-Unavailable optional Direct channels appear as warnings; they are not certified
-as active. Required launch/privacy/proxy failures still block startup.
+From **1.0.25**, new profiles use Direct only. The application does not install or remove Sandboxie. Old Sandboxie profile data is retained, but those profiles cannot run in this version; create new Direct profiles. Optional separate standard Windows accounts remain supported.
+
+An individual ID failure does not block profile creation or the whole launch. The failed channel uses system values and is marked in the ID table; independent verified channels remain active. Required EXE/config/account/privacy/proxy errors and unfinished ownership/cleanup still block startup.
 
 To replace MultiABF with a newer release, stop its managed profiles and close the application first. Back up the active data folder, replace the EXE, then reopen it. Game and DPB paths are specific to this PC. Copying an EXE to another computer does not migrate protected credentials or Windows accounts.
 
 ## Profile identifiers (1.0.8)
 
-Hover over **ID** before a profile name for a compact CPU/GPU/RAM and channel summary. **✓ Checked** means matching preparation evidence is saved; **• Saved** means assigned values are available without that check; **○ Native / Off** means that channel uses the original value; **! Check needed** means data is unavailable or a check needs attention. An amber badge identifies a missing ID assignment. This view does not re-check a running game or change its identity.
+Hover over **ID** before a profile name for a compact hardware and channel summary. Green **✓ / OK** means matching preparation evidence is available; red **! / Failed** marks an unsuccessful channel; **○ / Off** uses native values. **ID!** on the card warns about a failed ID. This view does not re-check a running game or change its identity.
 
-Click **ID**, or focus it and press Enter/Space, to open the details window. Expand the group you need, scroll with the mouse wheel or scrollbar, and select values to copy them. Close or Escape dismisses the window without saving changes. Groups needing attention start expanded.
+Click **ID**, or focus it and press Enter/Space, to open the details window. Expand the group you need, scroll with the mouse wheel or scrollbar, and select values to copy them. Close or Escape dismisses the window without saving changes.
 
 The interface count comes from the Windows interface table and can include VPN, virtual, miniport, loopback and system entries. It is not a count of physical network cards created by MultiABF. Several interfaces can reference the same network association GUID; repeated values are displayed once with the complete interface list.
 
-Preparation saves the full available list locally. Older profiles may need a new preparation before their individual storage-device and network GUID values are available. Changed assignments/settings require a fresh preparation. The list is excluded from diagnostic reports. See [Data storage](DATA.md) for its location.
+Preparation saves the full available list locally. Older profiles may need a new preparation before their individual storage-device and network GUID values are available. Ordinary starts reuse unchanged successful checks and remembered failures. Existing preparation retries failed channels; changed inputs/settings require the corresponding check. The list is excluded from diagnostic reports. See [Data storage](DATA.md) for its location.
 
 New automatic Direct profiles select the complete supported identity bundle, including CPU brand, GPU description, Vulkan device UUID and Windows group/owner. Current Windows users, including administrators, are supported; a separate standard account remains an optional choice. Copies receive independent values and retain the source profile's explicit channel selections. Existing profiles are not silently migrated or switched on.
 
-CPU brand support is bound to verified game builds. A game update can require a new MultiABF compatibility update; unknown builds are rejected rather than using old instruction addresses. Changing the CPU brand does not change its capabilities, topology or physical speed. GPU description changes preserve physical adapter selection and capabilities. Preparation checks and actual game getter observations are separate evidence.
+CPU brand support uses verified compatibility descriptions and validates the actual executable structure. Compatible ordinary game patches can be recognized without replacing MultiABF. Unknown or incompatible optional CPU hooks are reported as failed ID channels and use native values. Changing the CPU brand does not change capabilities, topology or physical speed. GPU description changes preserve physical adapter selection and capabilities. Preparation checks and actual game getter observations are separate evidence.
 
 ## General settings
 
@@ -64,9 +60,9 @@ To reduce the file, stop profiles and the launch queue, select **32–128 GiB**,
 
 ### Game update behavior
 
-An update affects the shared installed game outside Sandboxie. Profiles using the same installation wait for one update. If any client is using that installation, including one started manually, MultiABF shows why it cannot update and offers retry; it does not close that client. Close it yourself only when appropriate, then retry.
+An update affects the shared installed game for all Direct profiles. Profiles using the same installation wait for one update. If any client is using that installation, including one started manually, MultiABF shows why it cannot update and offers retry; it does not close that client. Close it yourself only when appropriate, then retry.
 
-Startup displays checking/updating/error stages and available launcher progress. Cancel prevents the profile from starting, while an ongoing update is allowed to finish safely. Access errors and damaged files are reported as errors, not silently treated as a required update. A game update can change compatibility with Sandboxie, DPB or plugins.
+Startup displays checking/updating/error stages and available launcher progress. Cancel prevents the profile from starting, while an ongoing update is allowed to finish safely. Access errors and damaged files are reported as errors, not silently treated as a required update. A game update can change compatibility with identity hooks, DPB or plugins.
 
 ## Create and configure a profile
 

@@ -15,7 +15,7 @@ The [official Grinding Gear Games terms](https://www.pathofexile.com/legal/terms
   or promise every Sandboxie restriction. Unsupported optional channels remain
   visible as unavailable, and are not proof of identity separation.
 
-- A Sandboxie container and an optional standard Windows account are not a virtual machine or a separate physical computer. The host OS, drivers, installed game and hardware resources remain shared.
+- An optional standard Windows account is not a virtual machine or a separate physical computer. The host OS, drivers, installed game and hardware resources remain shared.
 - Generated identifiers apply to implemented/verified surfaces. Some surfaces are unsupported, blocked or unmeasured. Complete hardware identity separation, anonymity and isolation from every game getter are not promised.
 - CPU-brand compatibility is bound to verified game images. An official game update can require a MultiABF compatibility update before that channel can launch.
 - Without an explicitly configured and verified route, profiles may share the host's public IP. A successful SOCKS5 connection test alone does not prove that all game traffic uses that route. MultiABF is not a system-wide VPN.
@@ -23,11 +23,11 @@ The [official Grinding Gear Games terms](https://www.pathofexile.com/legal/terms
 
 ## Compatibility and stability
 
-- Game, DPB, plugin, Windows, graphics-driver and Sandboxie updates can change compatibility. PoE1 and PoE2 require their matching DPB generation. MultiABF does not repair third-party bot logic or guarantee plugin behavior.
+- Game, DPB, plugin, Windows, graphics-driver updates can change compatibility. PoE1 and PoE2 require their matching DPB generation. MultiABF does not repair third-party bot logic or guarantee plugin behavior.
 - SDK attachment means the observed connection initialized; it is not proof of successful gameplay, every input path or every plugin. There can be crashes or hangs after a successful launch.
 - Source windows are managed asynchronously. A launcher/game window can still be visible briefly during startup; suppression of every first frame is not guaranteed.
 - The optional separate-Windows-user mode is experimental, needs account preparation and may take substantially longer on first use. Do not use OS-account cleanup tools manually against active managed accounts.
-- Existing incompatible Sandboxie installations are not silently replaced. Review the reported conflict rather than changing shared driver configuration while clients are running.
+- MultiABF 1.0.25 uses Direct only; installed Sandboxie components and legacy profile data are left in place. Create new Direct profiles to use this release.
 
 ## Resources, updates and data loss
 
@@ -41,7 +41,7 @@ The [official Grinding Gear Games terms](https://www.pathofexile.com/legal/terms
 
 Initial driver/service installation and managed-account work can require administrator permission. This affects the host Windows installation; it is not contained entirely inside a profile. Download MultiABF only from its [release repository](https://github.com/firerister-ops/MultiABF-Releases/releases), compare SHA256 and investigate security warnings rather than disabling security tools automatically.
 
-MultiABF's freeware license does not replace the game, DPB or Sandboxie licenses. Sandboxie Plus has separate [certificate requirements](https://sandboxie-plus.com/contribute/) for certain business/education uses. Check the applicable terms yourself.
+MultiABF's freeware license does not replace the game or DPB licenses. Historical third-party notices for older releases are retained.
 
 ## What has and has not been verified
 

@@ -2,11 +2,16 @@
 
 Open Settings → Diagnostics or the profile's Diagnostics action. Events identify creation, preparation, launch, running, cancellation and errors. Diagnostic archives exclude configuration secrets. Automatic blocking-error reports are enabled by default and can be disabled in Settings → Diagnostics. Review any attachment before publishing it in an issue.
 
-If first-run installation is canceled, no game profile is launched. Start MultiABF again to retry. An incompatible or partial Sandboxie installation is left unchanged and reported explicitly. UAC may also be required when enabling an optional separate Windows user.
+If first-run installation is canceled, no game profile is launched. Start MultiABF again to retry. Version 1.0.25 uses Direct only and does not install Sandboxie. UAC may also be required when enabling an optional separate Windows user.
 
 If profile deletion fails, the profile is retained with pending cleanup. Use Delete again to complete it; do not manually delete account hives, recovery files or shared caches.
 
 For bug reports include the MultiABF release, Windows version, the action performed and the displayed error code. Do not post proxy passwords, account credentials, raw client logs or screenshots containing account information.
+
+## ID! or a red ID row (1.0.25)
+
+Open ID and expand the marked group for its reason. A failed optional ID channel uses system values; other verified channels continue. Assigned values/settings are retained. Retry using the existing profile preparation after resolving the cause. Ordinary starts do not repeatedly deep-check a remembered failure. Reports include error codes and safe hardware catalogue failure facts, not the full local identifiers.
+
 
 ## DPB launch
 
@@ -32,13 +37,13 @@ Update to 1.0.3 or later. Choose PoE1 or PoE2 and the intended installed executa
 
 Version 1.0.4 reads disk capabilities before applying MultiABF storage modules. A known unavailable property or unsupported identifier format can produce **partial** coverage: supported fields are verified and unavailable values remain native. Partial does not mean every hardware identity field is isolated.
 
-Access denial, provider/read/clone failures, incorrect projected values and failed restoration remain blocking errors. Do not disable these checks to force a profile through. Send a new bug report from the failing preparation: its archive now includes each field's route, capability reason, HRESULT/type/status, active and restored checks, and nested WMI failures. Raw hardware identifiers and seed fingerprints are excluded from these diagnostic details.
+From 1.0.25, failures limited to identity channels are shown as Failed in the ID table and do not block the entire profile. Other verified channels remain active. Ownership, incomplete restoration/cleanup, required executable/config/account and assigned proxy/privacy failures remain blocking. Send a new bug report from the failing preparation: its archive now includes each field's route, capability reason, HRESULT/type/status, active and restored checks, and nested WMI failures. Raw hardware identifiers and seed fingerprints are excluded from these diagnostic details.
 
 The current release was checked with native helpers, controlled fixtures and the protected application without starting games or bots. The reporting device still needs to confirm its own result after updating.
 
 ## Profile creation: Generate identity / Windows error 2
 
-The Windows message "The system cannot find the file specified" can refer to a volume lookup, not a missing game or helper executable. Version 1.0.5 handles a non-system volume disappearing or becoming not ready during enumeration, keeps healthy volumes, and records the skip. A failure involving the system volume, access denial or incomplete enumeration still blocks creation.
+The Windows message "The system cannot find the file specified" can refer to a volume lookup, not a missing game or helper executable. Version 1.0.5 handles a non-system volume disappearing or becoming not ready during enumeration, keeps healthy volumes, and records the skip. From 1.0.25, a failure limited to identity enumeration is recorded as an ID failure while independent channels continue. Actual launch/config/storage access requirements and unfinished cleanup remain blocking.
 
 For volume-read failures, the error and diagnostic archive now identify the exact native API (for example QueryDosDeviceW or GetVolumePathNamesForVolumeNameW), the Windows error and the affected volume. The volume reference is its canonical Windows volume GUID, or the system drive root if its GUID could not be resolved. These details intentionally identify the problem volume; arbitrary folder paths, command arguments, disk serials and credentials are not included in this structured evidence.
 
