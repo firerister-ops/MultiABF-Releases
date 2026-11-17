@@ -8,10 +8,10 @@
 
 MultiABF is a Windows desktop application for creating persistent game profiles and switching between their windows from a single overview. Each profile keeps its own settings and generated identity. Profiles use Direct, including optional separate standard Windows users. Optional DPB integration starts the matching DPB installation for that profile.
 
-**[Download MultiABF 1.0.31](https://auth.aibotforge.pro/updates/multiabf/MultiABF-1.0.31.exe)** · [GitHub release](https://github.com/firerister-ops/MultiABF-Releases/releases/tag/v1.0.31) · [User guide](GUIDE.md) · [Risks and limitations](RISKS.md) · [DPB setup](DPB.md) · [Data storage](DATA.md) · [Troubleshooting](TROUBLESHOOTING.md)
+**[Download MultiABF 1.0.32](https://auth.aibotforge.pro/updates/multiabf/MultiABF-1.0.32.exe)** · [GitHub release](https://github.com/firerister-ops/MultiABF-Releases/releases/tag/v1.0.32) · [User guide](GUIDE.md) · [Risks and limitations](RISKS.md) · [DPB setup](DPB.md) · [Data storage](DATA.md) · [Troubleshooting](TROUBLESHOOTING.md)
 
 
-**Stable 1.0.31 improves DPB exit reporting.** Unexpected-exit reports retain the stopped state, process identity, initialization evidence and exit code. Already observed worker closure no longer becomes an unrequested-exit error. Game and DPB launch behavior is unchanged.
+**Stable 1.0.32 includes DPB log evidence in exit reports.** Bounded technical tails from the exact run are collected before reporting. Errors, exception types and stack frames are redacted; ordinary context becomes lifecycle markers. Reports show missing/unreadable logs and truncation. Raw files and settings are not uploaded.
 
 > Read the [risks](RISKS.md) before using game accounts. MultiABF does not guarantee protection from account sanctions, anonymity or compatibility with every game/DPB/plugin update. DPB is installed separately; MultiABF does not automatically press Start in a bot.
 

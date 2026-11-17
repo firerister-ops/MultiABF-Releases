@@ -24,6 +24,8 @@ Open ID and expand the marked group for its reason. A failed optional ID channel
 
 See [Launch DPB](DPB.md). Save the path to the complete installed DPB EXE, wait for the managed PoE1 profile to run, and use its profile menu. A disabled command explains its reason. DPB must be elevated through the integrated launcher; do not grant administrator membership to the game account. If initialization fails, record the profile diagnostic error; process-running alone is not proof of connection. DPB2 is not supported by this integration.
 
+From1.0.32, exit-triggered reports include bounded, redacted technical evidence from that exact DPB run before the error is queued: errors, exception types, stack frames and fixed lifecycle markers. The archive records absent/unreadable/unsafe logs and truncation. Raw log files, settings, account data, paths and endpoints are excluded. If DPB did not write/flush a failure, the report cannot invent its cause from exit-1 alone.
+
 ## A profile cannot be created: file not found
 
 In version 1.0.1 or later, read the creation step, File/component path and Windows number shown in the status bar. Hover over the status to read the complete message. If Windows did not report a path, the message states this explicitly.

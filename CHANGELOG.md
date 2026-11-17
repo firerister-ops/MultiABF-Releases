@@ -1,3 +1,9 @@
+## 1.0.32 - Stable, 2026-11-17
+
+- Include redacted technical evidence from the exact DPB run before exit-triggered reports are created. Preserve errors, exception types, stack frames and lifecycle markers for both games.
+- Read at most four64KiB log tails and retain at most80 entries. Show absent/unreadable/unsafe logs and truncation explicitly.
+- Exclude unrelated runs, settings, raw files, account/credential data, paths and endpoints. No new background polling or game/DPB launch behavior.
+
 ## 1.0.31 - Stable, 2026-11-17
 
 - Store terminal DPB state before reporting an unexpected exit. Include process/worker identity, initialization evidence and signed/hexadecimal exit code; exclude executable paths.
