@@ -61,3 +61,11 @@ Update and retry profile creation. A read-only retry with game launch disabled i
 ## Game exits, official update errors and canceled launches
 
 Update to **1.0.7** or later so new reports include owned process exit evidence, the last window action, render/cache state, bounded redacted updater errors and the actual cancellation Stop outcome. Missing historical exit codes or dialog bodies cannot be recovered from an older report. A zero exit code does not establish a manual close. Keep the report number if you contact support; do not publish credentials or complete game logs.
+
+## Unable to connect to patching server
+
+The official game updater could not reach the patch server. If this occurs with a selected proxy, change the proxy or close the updater and update the game manually through the official launcher without a proxy, then retry in MultiABF. A successful proxy availability test does not prove access to the game patch server.
+
+The existing **Settings → Automatically update the game** option controls the separate official update check. When it is disabled, normal profiles use their saved direct-launch arguments (new profiles use `--nopatch --nologo`). Skipping a launcher does not install a mandatory patch, so the game may still refuse login until manually updated. After a failed automatic update, MultiABF first closes its owned updater and tries direct launch with the assigned proxy. It retains an update warning and a separate fallback receipt for unchanged game files so other queued windows do not repeat the failed check. It never claims the game was updated. An updater still running or unconfirmed cleanup blocks that transition; assigned-proxy failures remain blocking.
+
+From 1.0.33, send a fresh report after a failure: it includes the updater checkpoint, process-validation reason and Windows error when available, proxy assignment and bounded numeric evidence from that exact updater proxy run. Missing logs and truncated tails are explicit. The report contains no proxy addresses, passwords or raw proxy log lines. These observations distinguish failure stages; they cannot identify a cause that the updater/payload never recorded.

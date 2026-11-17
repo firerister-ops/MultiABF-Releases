@@ -1,3 +1,9 @@
+## 1.0.33 - Stable, 2026-11-17
+
+- Explain the official patch-server connection error: change the selected proxy or update the game manually without a proxy, then retry.
+- Preserve updater process-validation reasons and Windows errors before launch failure reporting. Add bounded numeric evidence from the exact updater proxy run, without addresses, credentials or raw logs.
+- When an official update fails, close the owned updater and try the game directly with the assigned proxy. Reuse a separate unchanged-file fallback receipt for other windows; a required patch is then handled by the game. Keep unresolved cleanup/ownership and assigned-proxy failures blocking.
+
 ## 1.0.32 - Stable, 2026-11-17
 
 - Include redacted technical evidence from the exact DPB run before exit-triggered reports are created. Preserve errors, exception types, stack frames and lifecycle markers for both games.
