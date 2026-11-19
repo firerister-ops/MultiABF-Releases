@@ -1,3 +1,9 @@
+## 1.0.34 - Stable, 2026-11-19
+
+- Keep a profile in Stopping while its held game process is still running, even when job or worker teardown has completed. Apply the same rule to both games and Direct Windows-user modes.
+- Delay unexpected-exit reporting until live/pending evidence is resolved, preserving the eventual exit code. Confirmed exits remain reportable while cleanup is pending; expected Stops stay suppressed.
+- Record a stop requested by the Direct window observer as managed cleanup, retaining its reason and time in exit evidence.
+
 ## 1.0.33 - Stable, 2026-11-17
 
 - Explain the official patch-server connection error: change the selected proxy or update the game manually without a proxy, then retry.
