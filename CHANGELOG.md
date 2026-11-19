@@ -1,3 +1,10 @@
+## 1.0.35 - Stable, 2026-11-19
+
+- Report the rejected updater executable basename alongside its validation reason, without private paths or arguments.
+- Locate Direct window-observer failures by phase and native API; retain safe frames and process evidence from before cleanup.
+- Preserve the DPB worker first error, lifecycle and close reason. Capture evidence before early error reports; retain first and recent error contexts despite shutdown-warning floods.
+- These diagnostic improvements apply to both supported games.
+
 ## 1.0.34 - Stable, 2026-11-19
 
 - Keep a profile in Stopping while its held game process is still running, even when job or worker teardown has completed. Apply the same rule to both games and Direct Windows-user modes.
