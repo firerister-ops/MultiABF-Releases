@@ -1,3 +1,8 @@
+## 1.0.37 - Stable, 2026-11-23
+
+- Log delayed confirmation of Direct Stop separately from genuine unexpected game exits.
+- Preserve timeout details and continue to report actual game crashes.
+
 ## 1.0.36 - Stable, 2026-11-23
 
 - Fix a race where Stop could fail immediately while Windows was still closing the selected game process.
