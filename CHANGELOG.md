@@ -1,3 +1,8 @@
+## 1.0.36 - Stable, 2026-11-23
+
+- Fix a race where Stop could fail immediately while Windows was still closing the selected game process.
+- Confirm the exit of the original process in both PoE1 and PoE2. If it is still running, keep the profile available for another Stop.
+
 ## 1.0.35 - Stable, 2026-11-19
 
 - Report the rejected updater executable basename alongside its validation reason, without private paths or arguments.
