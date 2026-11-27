@@ -8,10 +8,10 @@
 
 MultiABF is a Windows desktop application for creating persistent game profiles and switching between their windows from a single overview. Each profile keeps its own settings and generated identity. Profiles use Direct, including optional separate standard Windows users. Optional DPB integration starts the matching DPB installation for that profile.
 
-**[Download MultiABF 1.0.37](https://auth.aibotforge.pro/updates/multiabf/MultiABF-1.0.37.exe)** · [GitHub release](https://github.com/firerister-ops/MultiABF-Releases/releases/tag/v1.0.37) · [User guide](GUIDE.md) · [Risks and limitations](RISKS.md) · [DPB setup](DPB.md) · [Data storage](DATA.md) · [Troubleshooting](TROUBLESHOOTING.md)
+**[Download MultiABF 1.0.38](https://auth.aibotforge.pro/updates/multiabf/MultiABF-1.0.38.exe)** · [GitHub release](https://github.com/firerister-ops/MultiABF-Releases/releases/tag/v1.0.38) · [User guide](GUIDE.md) · [Risks and limitations](RISKS.md) · [DPB setup](DPB.md) · [Data storage](DATA.md) · [Troubleshooting](TROUBLESHOOTING.md)
 
 
-**Stable 1.0.37 improves Stop reporting.** If Windows confirms a delayed Direct Stop on the original game process, MultiABF records that exit separately from unexpected exits.
+**Stable 1.0.38 fixes a Direct process-observation race.** An exited helper no longer causes window registration or cleanup of a game that is still running in the same owned job.
 
 > Read the [risks](RISKS.md) before using game accounts. MultiABF does not guarantee protection from account sanctions, anonymity or compatibility with every game/DPB/plugin update. DPB is installed separately; MultiABF does not automatically press Start in a bot.
 

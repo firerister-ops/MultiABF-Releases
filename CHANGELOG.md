@@ -1,3 +1,8 @@
+## 1.0.38 - Stable, 2026-11-27
+
+- Keep a live Direct game running when the native observer reports an already exited helper from the same job. Wait for a live observation before image lookup, window registration or resume.
+- Preserve the existing empty-job cleanup and cancellation paths. Shared behavior for PoE1 and PoE2.
+
 ## 1.0.37 - Stable, 2026-11-23
 
 - Log delayed confirmation of Direct Stop separately from genuine unexpected game exits.
