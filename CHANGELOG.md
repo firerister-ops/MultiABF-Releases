@@ -1,3 +1,7 @@
+## 1.0.39 - Stable, 2026-11-28
+
+- Recover temporary Direct identity inputs after a forced MultiABF exit for PoE1 and PoE2. The profile can start again without a Windows restart once the previous controller and its clients are gone.
+
 ## 1.0.38 - Stable, 2026-11-27
 
 - Keep a live Direct game running when the native observer reports an already exited helper from the same job. Wait for a live observation before image lookup, window registration or resume.
